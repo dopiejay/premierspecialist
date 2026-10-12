@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@theme {
+  --color-maroon: #701F35;
+  --color-maroon-dark: #4A1223;
+  --color-charcoal: #20242B;
+  --color-teal: #087F8C;
+  --color-rose: #F4E9ED;
+  --color-mint: #E5F3F3;
+  --color-ink: #24171C;
+  --color-cloud: #F6F7F9;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-ink antialiased; }
+.beat path { stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw 3.2s linear infinite; }
+@keyframes draw { to { stroke-dashoffset: -420; } }
+.float { animation: float 6s ease-in-out infinite; }
+@keyframes float { 50% { transform: translateY(-12px); } }
+.dots { background-image: radial-gradient(rgba(112,31,53,.14) 1.5px, transparent 1.5px); background-size: 22px 22px; }
+.dots-w { background-image: radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px); background-size: 22px 22px; }
