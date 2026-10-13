@@ -95,7 +95,7 @@ export const SERVICES = [
 ]
 
 export const FEATURED = [
-  { icon: Stethoscope, title: 'General & Outpatient Care', photo: P.outpatient, text: 'Medical consultations for common illnesses, routine health concerns and follow-up visits, subject to available services.' },
+  { icon: Stethoscope, title: 'General & Outpatient Care', photo: '/images/service1.jpg', text: 'Medical consultations for common illnesses, routine health concerns and follow-up visits, subject to available services.' },
   { icon: HeartPulse, title: 'Maternity & Women’s Health', photo: P.maternity, text: 'Pregnancy-related consultations and women’s health services, with details of available clinics and care options.' },
   { icon: FlaskConical, title: 'Laboratory & Diagnostics', photo: P.lab, text: 'Diagnostic investigations that support medical assessment and treatment decisions.' },
 ]
