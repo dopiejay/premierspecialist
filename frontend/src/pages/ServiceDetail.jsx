@@ -1,6 +1,6 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { ArrowRight, Check, Phone, UserRound } from 'lucide-react'
-import PageHero from '../components/PageHero'
+import Photo from '../components/Photo'
 import Section from '../components/Section'
 import SectionHeader from '../components/SectionHeader'
 import Button from '../components/Button'
@@ -19,10 +19,14 @@ export default function ServiceDetail() {
   if (!service) return <Navigate to="/services" replace />
   return (
     <>
-      <PageHero kicker="Medical services" title={service.title} text={service.overview} photo={service.photo} />
+      <section className="max-w-3xl mx-auto px-5 pt-32 pb-4">
+        <Link to="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-charcoal/60 hover:text-charcoal transition"><ArrowRight size={16} className="rotate-180" /> All services</Link>
+        <Photo id={service.photo} icon={service.icon} alt={service.title} w={1200} className="mt-8 w-full h-72 md:h-96 rounded-2xl block" />
+        <h1 className="mt-8 font-display text-4xl md:text-5xl font-bold text-charcoal">{service.title}</h1>
+        <p className="mt-4 text-lg leading-relaxed text-ink/70">{service.overview}</p>
+      </section>
 
       <Section bg="white">
-        <Link to="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-charcoal/60 hover:text-charcoal transition mb-10"><ArrowRight size={16} className="rotate-180" /> All services</Link>
         <SectionHeader eyebrow="What this service covers" title="Conditions &amp; treatments" text="The information below is placeholder copy and is being reviewed with our clinical team before it goes live." />
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 mt-12">
           <div>
