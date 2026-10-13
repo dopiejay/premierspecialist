@@ -10,7 +10,7 @@ export default function Hero() {
         <p className="text-xs font-semibold uppercase tracking-[.25em] text-white/70">
           Private hospital · Blantyre CBD
         </p>
-        <h1 className="mt-6 max-w-3xl font-display text-4xl sm:text-6xl md:text-7xl font-semibold leading-[1.06] tracking-tight text-white">
+        <h1 className="mt-6 max-w-3xl font-display text-5xl md:text-7xl font-semibold leading-[1.02] tracking-tight text-white">
           Compassionate care.<br /><span className="text-cyan">Trusted expertise.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-white/70">
