@@ -6,7 +6,10 @@ export const tel = `tel:${H.phone.replace(/\s/g, '')}`
 export const DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=Shifa+Hospital+Fatima+Arcade+Blantyre'
 
 // Stock placeholders (Unsplash). Replace with real Shifa photos in src/assets when available.
-export const img = (id, w = 1200) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=75`
+export const img = (id, w = 1200) =>
+  /^(https?:)?\/\//.test(id) || id.startsWith('/')
+    ? id
+    : `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=75`
 export const P = {
   hero: '1576091160399-112ba8d25d1d', doctor: '1612349317150-e413f6a5b16d', lab: '1579154204601-01588f351e67',
   dental: '1606811841689-23dfddce3e95', surgery: '1551076805-e1869033e561', hospital: '1519494026892-80bbd2d6fd0d',
@@ -23,7 +26,7 @@ export const SERVICES = [
     slug: 'outpatient-internal-medicine',
     icon: Stethoscope,
     title: 'Outpatient & Internal Medicine',
-    photo: P.outpatient,
+    photo: '/images/service1.jpg',
     text: 'Consultations for everyday illness, chronic condition follow-up and referrals to the right specialist.',
     overview: 'Outpatient and internal medicine is the first point of contact for most patients. Consultations cover everyday illness, ongoing conditions and general health concerns, with referrals made to the right specialist when needed.',
     conditions: ['Everyday illness such as colds, flu and infections', 'Chronic conditions that need ongoing follow-up', 'General health concerns and routine check-ups'],
@@ -83,7 +86,7 @@ export const SERVICES = [
     slug: 'dental-care-implants',
     icon: Smile,
     title: 'Dental Care & Implants',
-    photo: P.dental,
+    photo: '/images/dental.jpg',
     text: 'Check-ups and treatment through our dedicated dental and implant centre.',
     overview: 'Dental care and implants are provided through our dedicated dental centre, covering routine check-ups, treatment and implant enquiries.',
     conditions: ['Routine dental and oral health needs', 'Missing teeth and implant enquiries'],
@@ -127,7 +130,7 @@ export const TIPS = [
     overview: 'Mental health is part of overall health. Stress, worry and low mood are common, and talking about them — with people you trust or with a professional — makes a real difference.',
   },
   {
-    slug: 'do-not-smoke', icon: ShieldCheck, tag: 'Prevention', title: 'Do not smoke', photo: P.smoke,
+    slug: 'do-not-smoke', icon: ShieldCheck, tag: 'Prevention', title: 'Do not smoke', photo: '/images/nosmocking.jpg',
     text: 'Stopping smoking is one of the biggest steps you can take to protect your health and those around you.',
     overview: 'Smoking harms almost every part of the body and increases the risk of serious illness, including heart and lung disease. It also affects the people around you through second-hand smoke. Quitting is hard, but support greatly improves your chances.',
   },

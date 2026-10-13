@@ -4,7 +4,7 @@ import Section from '../components/Section'
 import SectionHeader from '../components/SectionHeader'
 import ServiceCard from '../components/ServiceCard'
 import PromoBand from '../components/PromoBand'
-import { SERVICES, P } from '../data/site'
+import { SERVICES } from '../data/site'
 
 const ACCESS = [
   [Siren, 'Walk-in care', 'Come in without a booking when you need urgent attention.'],
@@ -15,7 +15,7 @@ const ACCESS = [
 export default function Services() {
   return (
     <>
-      <PageHero kicker="Medical services" title="Medical Services" text="Explore our healthcare services and find the information you need before your visit." photo={P.hospital} />
+      <PageHero kicker="Medical services" title="Medical Services" text="Explore our healthcare services and find the information you need before your visit." src="/images/servicepage.jpg" showActions={false} />
 
       <Section bg="white">
         <SectionHeader eyebrow="Getting started" title="How to access care" text="Choose the route that fits your needs — whether it’s a routine consultation, an urgent concern or a referral." />
@@ -36,7 +36,7 @@ export default function Services() {
         </div>
       </Section>
 
-      <PromoBand eyebrow="Need a hand?" title="Not sure which service to choose?" text="Send us an appointment request or call, and our team will point you to the right service and help you get prepared for your visit." photo={P.doctor} alt="Shifa Hospital doctor" />
+      <PromoBand eyebrow="Need a hand?" title="Not sure which service to choose?" text="Send us an appointment request or call, and our team will point you to the right service and help you get prepared for your visit." />
     </>
   )
 }

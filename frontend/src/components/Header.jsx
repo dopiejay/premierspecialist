@@ -25,13 +25,11 @@ export default function Header() {
             {NAV.map(([to, l]) => <NavLink key={to} to={to} end={to === '/'} className={link}>{l}</NavLink>)}
             <Button to="/book" variant="primary" size="sm" className="ml-3">Book an Appointment</Button>
           </nav>
-          <div className="flex lg:hidden items-center gap-2">
-            <Button to="/book" variant="primary" size="sm">Book</Button>
-            <button className="p-2 text-charcoal" onClick={() => setOpen(!open)} aria-label="Menu">{open ? <X /> : <Menu />}</button>
-          </div>
+          <button className="lg:hidden p-2 text-charcoal" onClick={() => setOpen(!open)} aria-label="Menu">{open ? <X /> : <Menu />}</button>
         </div>
         {open && <div className="lg:hidden border-t border-slate-200 bg-white px-4 py-3 flex flex-col gap-1" onClick={() => setOpen(false)}>
           {NAV.map(([to, l]) => <NavLink key={to} to={to} end={to === '/'} className={mobileLink}>{l}</NavLink>)}
+          <Button to="/book" variant="primary" size="sm" className="mt-2 justify-center">Book an Appointment</Button>
         </div>}
       </div>
     </header>

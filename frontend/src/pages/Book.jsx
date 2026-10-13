@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { CalendarCheck, Clock, MapPin, Phone } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import Button from '../components/Button'
-import { SERVICES, H, P } from '../data/site'
+import { SERVICES, H } from '../data/site'
 
 export default function Book() {
   const [sent, setSent] = useState(false)
   const f = 'w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan focus:ring-2 focus:ring-cyan/20'
   return (
     <>
-      <PageHero kicker="Appointments" title="Request an appointment" text="Send us your details and our reception team will contact you to confirm a time." photo={P.outpatient} />
+      <PageHero kicker="Appointments" title="Request an appointment" text="Send us your details and our reception team will contact you to confirm a time." showActions={false} />
       <section className="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-5 gap-10">
         <form className="lg:col-span-3 bg-white rounded-2xl border border-slate-200 p-8 md:p-10 space-y-4" onSubmit={(e) => { e.preventDefault(); setSent(true) }}>
           {sent ? (
