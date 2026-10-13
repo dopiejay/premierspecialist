@@ -18,7 +18,7 @@ export default function FeaturedServices() {
             <div className="p-7">
               <h3 className="font-display text-2xl font-bold text-charcoal mb-2">{s.title}</h3>
               <p className="text-sm text-ink/65 leading-relaxed mb-5">{s.text}</p>
-              <Link to="/services" className="inline-flex items-center gap-1 font-bold text-teal hover:text-charcoal transition">Learn More <ArrowRight size={16} /></Link>
+              <Link to="/services" className="inline-flex items-center gap-1 font-bold text-cyan hover:text-charcoal transition">Learn More <ArrowRight size={16} /></Link>
             </div>
           </Reveal>
         ))}

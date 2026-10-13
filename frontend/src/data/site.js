@@ -97,7 +97,7 @@ export const FEATURED = [
   { icon: FlaskConical, title: 'Laboratory & Diagnostics', photo: P.lab, text: 'Diagnostic investigations that support medical assessment and treatment decisions.' },
 ]
 
-export const NAV = [['/', 'Home'], ['/about', 'About Us'], ['/services', 'Medical Services'], ['/health-tips', 'Health Tips'], ['/doctors', 'Our Doctors']]
+export const NAV = [['/', 'Home'], ['/about', 'About Us'], ['/services', 'Medical Services'], ['/doctors', 'Our Doctors'], ['/health-tips', 'Health Tips']]
 
 // General wellness content (demo copy — pending review by the hospital). Shape is CMS-ready.
 export const TIPS = [

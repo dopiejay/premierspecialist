@@ -1,5 +1,5 @@
 import { CalendarCheck, Siren, Stethoscope } from 'lucide-react'
-import PageHead from '../components/PageHead'
+import PageHero from '../components/PageHero'
 import Section from '../components/Section'
 import SectionHeader from '../components/SectionHeader'
 import ServiceCard from '../components/ServiceCard'
@@ -15,14 +15,14 @@ const ACCESS = [
 export default function Services() {
   return (
     <>
-      <PageHead kicker="Medical services" title="Medical Services" text="Explore our healthcare services and find the information you need before your visit." photo={P.hospital} />
+      <PageHero kicker="Medical services" title="Medical Services" text="Explore our healthcare services and find the information you need before your visit." photo={P.hospital} />
 
       <Section bg="white">
         <SectionHeader eyebrow="Getting started" title="How to access care" text="Choose the route that fits your needs — whether it’s a routine consultation, an urgent concern or a referral." />
         <div className="grid sm:grid-cols-3 gap-6 mt-12">
           {ACCESS.map(([Icon, t, d]) => (
             <div key={t} className="flex gap-4 rounded-2xl border border-slate-200 p-6">
-              <span className="w-11 h-11 rounded-xl bg-cloud text-teal grid place-items-center shrink-0"><Icon size={20} /></span>
+              <span className="w-11 h-11 rounded-xl bg-cloud text-cyan grid place-items-center shrink-0"><Icon size={20} /></span>
               <div><p className="font-bold text-charcoal">{t}</p><p className="text-sm text-ink/60 mt-1 leading-relaxed">{d}</p></div>
             </div>
           ))}

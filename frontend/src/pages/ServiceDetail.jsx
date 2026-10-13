@@ -1,6 +1,6 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { ArrowRight, Check, Phone, UserRound } from 'lucide-react'
-import PageHead from '../components/PageHead'
+import PageHero from '../components/PageHero'
 import Section from '../components/Section'
 import SectionHeader from '../components/SectionHeader'
 import Button from '../components/Button'
@@ -19,7 +19,7 @@ export default function ServiceDetail() {
   if (!service) return <Navigate to="/services" replace />
   return (
     <>
-      <PageHead kicker="Medical services" title={service.title} text={service.overview} photo={service.photo} />
+      <PageHero kicker="Medical services" title={service.title} text={service.overview} photo={service.photo} />
 
       <Section bg="white">
         <Link to="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-charcoal/60 hover:text-charcoal transition mb-10"><ArrowRight size={16} className="rotate-180" /> All services</Link>
@@ -30,7 +30,7 @@ export default function ServiceDetail() {
             <ul className="mt-5 space-y-4">
               {service.conditions.map((c) => (
                 <li key={c} className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-cloud text-teal grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
+                  <span className="w-6 h-6 rounded-full bg-cloud text-cyan grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
                   <span className="text-ink/70 leading-relaxed">{c}</span>
                 </li>
               ))}
@@ -41,7 +41,7 @@ export default function ServiceDetail() {
             <ul className="mt-5 space-y-4">
               {service.treatments.map((t) => (
                 <li key={t} className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-cloud text-teal grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
+                  <span className="w-6 h-6 rounded-full bg-cloud text-cyan grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
                   <span className="text-ink/70 leading-relaxed">{t}</span>
                 </li>
               ))}
@@ -55,7 +55,7 @@ export default function ServiceDetail() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
               {service.clinicians.map((c) => (
                 <div key={c.name} className="flex items-center gap-4 rounded-2xl border border-slate-200 p-5">
-                  <span className="w-12 h-12 rounded-full bg-cloud grid place-items-center shrink-0"><UserRound size={22} className="text-teal" /></span>
+                  <span className="w-12 h-12 rounded-full bg-cloud grid place-items-center shrink-0"><UserRound size={22} className="text-cyan" /></span>
                   <div><p className="font-bold text-charcoal">{c.name}</p><p className="text-sm text-ink/60">{c.role}</p></div>
                 </div>
               ))}

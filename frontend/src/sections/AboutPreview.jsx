@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Building2, FlaskConical, HeartPulse, MapPin, Stethoscope } from 'lucide-react'
+import { ArrowRight, FlaskConical, HeartPulse, MapPin, Stethoscope } from 'lucide-react'
 import Reveal from '../components/Reveal'
-import Photo from '../components/Photo'
 import Eyebrow from '../components/Eyebrow'
-import { P } from '../data/site'
 
 const POINTS = [
   [HeartPulse, 'Patient-centred care', 'Respect, dignity and clear communication at every visit.'],
@@ -17,7 +15,7 @@ export default function AboutPreview() {
     <section className="bg-cloud py-24">
       <div className="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <Reveal className="relative order-2 lg:order-1">
-          <Photo id={P.hospital} alt="Shifa Hospital building" icon={Building2} className="w-full h-[380px] lg:h-[480px] rounded-[1.75rem] shadow-xl" />
+          <img src="/images/about.jpg" alt="Shifa Hospital building" className="w-full h-[380px] lg:h-[480px] rounded-[1.75rem] shadow-xl object-cover" />
         </Reveal>
         <Reveal delay={120} className="order-1 lg:order-2">
           <Eyebrow>About Shifa</Eyebrow>
@@ -26,7 +24,7 @@ export default function AboutPreview() {
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 mt-9">
             {POINTS.map(([Icon, t, d]) => (
               <div key={t} className="flex gap-4">
-                <span className="w-11 h-11 rounded-xl bg-white text-teal grid place-items-center shrink-0"><Icon size={20} /></span>
+                <span className="w-11 h-11 rounded-xl bg-white text-charcoal grid place-items-center shrink-0"><Icon size={20} /></span>
                 <div>
                   <p className="font-bold text-charcoal">{t}</p>
                   <p className="text-sm text-ink/60 mt-0.5 leading-relaxed">{d}</p>
@@ -34,7 +32,7 @@ export default function AboutPreview() {
               </div>
             ))}
           </div>
-          <Link to="/about" className="inline-flex items-center gap-2 mt-9 font-bold text-teal hover:text-charcoal transition">Read more about us <ArrowRight size={18} /></Link>
+          <Link to="/about" className="inline-flex items-center gap-2 mt-9 font-bold text-cyan hover:text-charcoal transition">Read more about us <ArrowRight size={18} /></Link>
         </Reveal>
       </div>
     </section>

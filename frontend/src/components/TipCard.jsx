@@ -10,7 +10,7 @@ export default function TipCard({ tip, delay = 0 }) {
         <Photo id={tip.photo} icon={tip.icon} alt={tip.title} className="absolute inset-0 w-full h-full transition duration-500 group-hover:scale-105" />
       </div>
       <div className="flex flex-col flex-1 p-7">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal">{tip.tag}</p>
+        <p className="text-xs font-semibold uppercase tracking-wide text-cyan">{tip.tag}</p>
         <h3 className="font-display text-2xl font-bold text-charcoal mt-2 mb-2">{tip.title}</h3>
         <p className="text-sm text-ink/65 leading-relaxed mb-6">{tip.text}</p>
         <div className="mt-auto">

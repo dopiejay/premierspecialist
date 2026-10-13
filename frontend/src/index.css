@@ -1,13 +1,15 @@
 @import "tailwindcss";
 @theme {
-  --color-maroon: #701F35;
-  --color-maroon-dark: #4A1223;
+  --color-purple: #600CA0;
+  --color-purple-dark: #4A0878;
   --color-charcoal: #20242B;
-  --color-teal: #087F8C;
-  --color-rose: #F4E9ED;
-  --color-mint: #E5F3F3;
-  --color-ink: #24171C;
-  --color-cloud: #F6F7F9;
+  --color-cyan: #00ADF1;
+  --color-cyan-dark: #0086BC;
+  --color-yellow: #F2D51A;
+  --color-green: #198A2D;
+  --color-ink: #241B2E;
+  --color-cloud: #F2F2F2;
+  --color-mint: #F2F2F2;
   --font-sans: "Outfit", system-ui, sans-serif;
   --font-display: "Outfit", system-ui, sans-serif;
 }
@@ -17,5 +19,5 @@ body { @apply bg-white text-ink antialiased; }
 @keyframes draw { to { stroke-dashoffset: -420; } }
 .float { animation: float 6s ease-in-out infinite; }
 @keyframes float { 50% { transform: translateY(-12px); } }
-.dots { background-image: radial-gradient(rgba(112,31,53,.14) 1.5px, transparent 1.5px); background-size: 22px 22px; }
+.dots { background-image: radial-gradient(rgba(0,173,241,.16) 1.5px, transparent 1.5px); background-size: 22px 22px; }
 .dots-w { background-image: radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px); background-size: 22px 22px; }

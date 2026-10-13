@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 
 const VARIANTS = {
-  primary: 'bg-maroon text-white hover:bg-maroon-dark',
+  primary: 'bg-purple text-white hover:bg-purple-dark',
+  cyan: 'bg-cyan text-white hover:bg-cyan-dark',
   light: 'bg-white text-ink hover:bg-white/90',
   ghostLight: 'border border-white/25 text-white hover:border-white/60 hover:bg-white/5',
-  outline: 'border border-charcoal/20 text-charcoal hover:border-charcoal/50 hover:bg-charcoal/5',
+  outline: 'border border-purple/20 text-purple hover:border-purple/50 hover:bg-purple/5',
 }
 const SIZES = {
   sm: 'px-5 py-2.5 text-sm',

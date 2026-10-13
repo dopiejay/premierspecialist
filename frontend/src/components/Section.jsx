@@ -1,4 +1,4 @@
-const BG = { white: 'bg-white', cloud: 'bg-cloud', charcoal: 'bg-charcoal text-white' }
+const BG = { white: 'bg-white', cloud: 'bg-cloud', purple: 'bg-purple text-white' }
 
 export default function Section({ id, bg = 'white', className = '', innerClassName = '', children }) {
   return (
