@@ -50,8 +50,10 @@ component in `frontend/src/data/site.js` / `frontend/src/components/Photo.jsx` h
 
 ## Still to verify with the clinic — do not treat as final
 
-- **Services**: the service list is a plausible specialist-clinic set, not confirmed. The
-  clinic's real specialty mix must replace it (`frontend/src/data/site.js` → `SERVICES`).
+- **Services**: `SERVICES` (`frontend/src/data/site.js`) now reflects the clinic's directory-listed
+  mix — Dermatology & Advanced Skin Care, Ophthalmology, Optics and Specialist Consultations — and
+  each service carries a `categories` breakdown shown on its detail page. Category wording is
+  indicative and still needs confirmation by the clinic.
 - **Doctors**: `TEAM` profiles are illustrative placeholders (invented names). Replace with
   verified, approved practitioner details before launch, or remove the page from `NAV`.
 - Contact details, opening hours and location (sourced from a directory listing, unverified).

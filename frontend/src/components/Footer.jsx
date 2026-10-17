@@ -3,11 +3,10 @@ import { MapPin, Phone, Mail } from 'lucide-react'
 import { H, tel, NAV } from '../data/site'
 
 const FOOTER_SERVICES = [
-  ['Internal Medicine & Specialist Consultations', 'internal-medicine-consultations'],
-  ['Women’s Health & Antenatal Care', 'womens-health-antinatal'],
-  ['Paediatrics & Child Health', 'paediatrics-child-health'],
-  ['Chronic Disease Management', 'chronic-disease-management'],
-  ['Laboratory & Diagnostics', 'laboratory-diagnostics'],
+  ['Dermatology & Advanced Skin Care', 'dermatology-skin-care'],
+  ['Ophthalmology', 'ophthalmology'],
+  ['Optics', 'optics'],
+  ['Specialist Consultations', 'specialist-consultations'],
 ]
 
 export default function Footer() {

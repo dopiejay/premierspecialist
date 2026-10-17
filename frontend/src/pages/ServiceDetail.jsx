@@ -1,17 +1,9 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { ArrowRight, Check, Phone, UserRound } from 'lucide-react'
+import { ArrowRight, Check, UserRound } from 'lucide-react'
 import Photo from '../components/Photo'
 import Section from '../components/Section'
 import SectionHeader from '../components/SectionHeader'
-import Button from '../components/Button'
-import ContactDetails from '../components/ContactDetails'
-import { SERVICES, tel } from '../data/site'
-
-const STEPS = [
-  ['Request an appointment', 'Book online, or call reception directly.'],
-  ['We confirm', 'Reception contacts you to confirm a time and any requirements.'],
-  ['Come prepared', 'Bring your ID, insurance details and any referral notes.'],
-]
+import { SERVICES } from '../data/site'
 
 export default function ServiceDetail() {
   const { slug } = useParams()
@@ -27,31 +19,49 @@ export default function ServiceDetail() {
       </section>
 
       <Section bg="white">
-        <SectionHeader eyebrow="What this service covers" title="Conditions &amp; treatments" text="The information below is placeholder copy and is being reviewed with our clinical team before it goes live." />
-        <div className="grid md:grid-cols-2 gap-10 lg:gap-16 mt-12">
-          <div>
-            <h3 className="font-display text-xl font-bold text-charcoal">Conditions &amp; patient needs</h3>
-            <ul className="mt-5 space-y-4">
-              {service.conditions.map((c) => (
-                <li key={c} className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-cloud text-cyan grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
-                  <span className="text-ink/70 leading-relaxed">{c}</span>
-                </li>
-              ))}
-            </ul>
+        <SectionHeader eyebrow="What this service covers" title={service.categories ? 'Our areas of care' : 'Conditions & treatments'} text="The information below is placeholder copy and is being reviewed with our clinical team before it goes live." />
+        {service.categories ? (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {service.categories.map((cat) => (
+              <div key={cat.title} className="rounded-2xl border border-slate-200 bg-white p-6">
+                <h3 className="font-display text-lg font-bold text-charcoal">{cat.title}</h3>
+                <ul className="mt-4 space-y-3">
+                  {cat.items.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="w-5 h-5 rounded-full bg-cloud text-cyan grid place-items-center shrink-0 mt-0.5"><Check size={12} /></span>
+                      <span className="text-sm text-ink/70 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-          <div>
-            <h3 className="font-display text-xl font-bold text-charcoal">Available treatments &amp; procedures</h3>
-            <ul className="mt-5 space-y-4">
-              {service.treatments.map((t) => (
-                <li key={t} className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-cloud text-cyan grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
-                  <span className="text-ink/70 leading-relaxed">{t}</span>
-                </li>
-              ))}
-            </ul>
+        ) : (
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 mt-12">
+            <div>
+              <h3 className="font-display text-xl font-bold text-charcoal">Conditions &amp; patient needs</h3>
+              <ul className="mt-5 space-y-4">
+                {service.conditions?.map((c) => (
+                  <li key={c} className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-cloud text-cyan grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
+                    <span className="text-ink/70 leading-relaxed">{c}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display text-xl font-bold text-charcoal">Available treatments &amp; procedures</h3>
+              <ul className="mt-5 space-y-4">
+                {service.treatments?.map((t) => (
+                  <li key={t} className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-cloud text-cyan grid place-items-center shrink-0 mt-0.5"><Check size={14} /></span>
+                    <span className="text-ink/70 leading-relaxed">{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
+        )}
 
         {service.clinicians?.length > 0 && (
           <div className="mt-14 pt-14 border-t border-slate-200">
@@ -66,31 +76,6 @@ export default function ServiceDetail() {
             </div>
           </div>
         )}
-      </Section>
-
-      <Section bg="cloud">
-        <SectionHeader eyebrow="Next steps" title="How to book &amp; find us" text="Everything you need to arrange a visit — how to request an appointment, and where to find us." />
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mt-12 items-start">
-          <div>
-            <h3 className="font-display text-xl font-bold text-charcoal">How to enquire or book</h3>
-            <ol className="mt-6 space-y-5">
-              {STEPS.map(([t, d], i) => (
-                <li key={t} className="flex gap-4">
-                  <span className="w-8 h-8 rounded-full bg-white text-charcoal text-sm font-bold grid place-items-center shrink-0 shadow-sm">{i + 1}</span>
-                  <div><p className="font-bold text-charcoal">{t}</p><p className="text-sm text-ink/65 mt-0.5">{d}</p></div>
-                </li>
-              ))}
-            </ol>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button to="/book">Book an appointment <ArrowRight size={18} /></Button>
-              <Button href={tel} variant="outline"><Phone size={18} /> Call reception</Button>
-            </div>
-          </div>
-          <div>
-            <h3 className="font-display text-xl font-bold text-charcoal">Contact details &amp; location</h3>
-            <div className="mt-6"><ContactDetails /></div>
-          </div>
-        </div>
       </Section>
     </>
   )

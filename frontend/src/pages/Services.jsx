@@ -31,8 +31,8 @@ export default function Services() {
 
       <Section bg="cloud">
         <SectionHeader className="mb-12" eyebrow="What we offer" title="Our services" text="Browse our departments and treatments. Open any service to learn more and how to get prepared for your visit." />
-        <div className="grid md:grid-cols-3 gap-6">
-          {SERVICES.map((s, i) => <ServiceCard key={s.slug} service={s} delay={(i % 3) * 100} />)}
+        <div className="grid sm:grid-cols-2 gap-6">
+          {SERVICES.map((s, i) => <ServiceCard key={s.slug} service={s} delay={(i % 2) * 100} />)}
         </div>
       </Section>
 

@@ -1,4 +1,4 @@
-import { Stethoscope, HeartPulse, Activity, Baby, FlaskConical, Scissors, Smile, Droplets, Salad, Moon, Brain, ShieldCheck } from 'lucide-react'
+import { Stethoscope, HeartPulse, Activity, Baby, FlaskConical, Smile, Droplets, Salad, Moon, Brain, ShieldCheck, Sparkles, Eye, Glasses } from 'lucide-react'
 
 // TODO: confirm every value with Premier Specialist Clinic before going live.
 // Contact details below are from the clinic's public directory listing (MapXplore) and are pending verification.
@@ -26,74 +26,82 @@ export const P = {
   doc4: '1582750433449-648ed127bb54', doc5: '1559839734-2b71ea197ec2', doc6: '1651008376811-b90baee60c1f',
 }
 
-// Specialist-clinic services. Detail content is placeholder copy pending clinical verification.
+// Specialist-clinic services. Each service is broken into categories of care so
+// patients can see exactly what is offered. Copy pending clinical verification.
 export const SERVICES = [
   {
-    slug: 'internal-medicine-consultations',
-    icon: Stethoscope,
-    title: 'Internal Medicine & Specialist Consultations',
+    slug: 'dermatology-skin-care',
+    icon: Sparkles,
+    title: 'Dermatology & Advanced Skin Care',
     photo: '/images/service1.jpg',
-    text: 'Consultations for everyday illness, long-term conditions and referral to the right specialist.',
-    overview: 'Internal medicine consultations are the first point of contact for most patients. Consultations cover everyday illness, ongoing conditions and general health concerns, with referral to other specialists when needed.',
-    conditions: ['Everyday illness such as colds, flu and infections', 'Long-term conditions that need ongoing follow-up', 'General health concerns and routine check-ups'],
-    treatments: ['Specialist medical consultations', 'Long-term condition follow-up', 'Referral to other specialists', 'Preventive health advice'],
+    text: 'Dedicated consultations, advanced therapies and cosmetic treatments for acute and chronic skin conditions.',
+    overview: 'Our dermatology service cares for the skin, hair and nails across every age group — from short-lived rashes to long-term conditions and advanced cosmetic treatment, all delivered under specialist supervision.',
+    categories: [
+      { title: 'General & medical dermatology', items: ['Acne and acne scarring', 'Eczema and atopic dermatitis', 'Psoriasis', 'Rosacea and facial redness', 'Hives (urticaria) and chronic rashes'] },
+      { title: 'Skin infections', items: ['Fungal infections such as ringworm and athlete’s foot', 'Bacterial skin infections', 'Viral skin problems including warts and cold sores', 'Scabies and other infestations'] },
+      { title: 'Hair & scalp conditions', items: ['Hair loss and alopecia', 'Dandruff and scalp irritation', 'Scalp infections', 'Hair and scalp assessment'] },
+      { title: 'Nail conditions', items: ['Fungal nail infection', 'Ingrown toenails', 'Nail disorders and discolouration'] },
+      { title: 'Pigmentation & skin tone', items: ['Hyperpigmentation and dark spots', 'Melasma', 'Vitiligo', 'Uneven skin tone'] },
+      { title: 'Allergy & skin sensitivity', items: ['Allergic skin reactions', 'Contact dermatitis', 'Sensitive and reactive skin'] },
+      { title: 'Lesions, moles & screening', items: ['Mole and skin lesion assessment', 'Skin cancer screening', 'Cyst, wart and skin tag removal'] },
+      { title: 'Cosmetic & advanced skin therapies', items: ['Chemical peels', 'Skin rejuvenation', 'Scar treatment', 'Advanced skin therapies'] },
+      { title: 'Children’s skin', items: ['Childhood eczema', 'Nappy rash', 'Birthmarks', 'Common childhood rashes'] },
+    ],
   },
   {
-    slug: 'womens-health-antinatal',
-    icon: HeartPulse,
-    title: 'Women’s Health & Antenatal Care',
-    photo: P.maternity,
-    text: 'Antenatal care, women’s health and family planning, with specialist clinics on scheduled days.',
-    overview: 'Women’s health and antenatal care support women through pregnancy and beyond, alongside general gynaecological care, with specialist clinics held on scheduled days.',
-    conditions: ['Pregnancy and antenatal concerns', 'Women’s health and gynaecological needs', 'Family planning discussions'],
-    treatments: ['Antenatal consultations', 'Women’s health clinics', 'Scheduled specialist reviews'],
+    slug: 'ophthalmology',
+    icon: Eye,
+    title: 'Ophthalmology',
+    photo: P.doctor,
+    text: 'Expert medical and surgical eye care for complex optical disorders, delivered by specialist consultants.',
+    overview: 'Our ophthalmology service provides medical and surgical care for the eyes, from routine assessment of vision problems to the management of complex eye disease, with referral for surgery where it is needed.',
+    categories: [
+      { title: 'Eye consultations & examinations', items: ['Assessment of vision problems', 'Comprehensive eye examination', 'Diagnosis of eye disease'] },
+      { title: 'Cataract assessment & care', items: ['Cataract assessment', 'Pre- and post-operative review', 'Referral for cataract surgery'] },
+      { title: 'Glaucoma screening & management', items: ['Glaucoma screening', 'Eye pressure monitoring', 'Ongoing glaucoma care'] },
+      { title: 'Retina & diabetic eye disease', items: ['Diabetic eye screening', 'Retinal assessment', 'Management of retinal conditions'] },
+      { title: 'Eye infections & inflammation', items: ['Conjunctivitis', 'Blepharitis', 'Uveitis and eye inflammation'] },
+      { title: 'Eye injuries & trauma', items: ['Assessment of eye injuries', 'Foreign body removal', 'Urgent eye care advice'] },
+      { title: 'Surgical eye care', items: ['Specialist surgical assessment', 'Referral for eye surgery', 'Post-operative follow-up'] },
+      { title: 'Children’s eye care', items: ['Children’s eye examination', 'Squint and lazy eye assessment', 'Vision development concerns'] },
+    ],
   },
   {
-    slug: 'paediatrics-child-health',
-    icon: Baby,
-    title: 'Paediatrics & Child Health',
-    photo: P.baby,
-    text: 'Care for infants, children and adolescents, including growth, nutrition and immunisation advice.',
-    overview: 'Paediatrics and child health covers the medical needs of infants, children and adolescents, from routine check-ups to the management of childhood illness.',
-    conditions: ['Childhood illness and infections', 'Growth, nutrition and development concerns', 'Routine child health checks'],
-    treatments: ['Paediatric consultations', 'Child health and development reviews', 'Immunisation advice and referral', 'Referral for specialist paediatric care'],
+    slug: 'optics',
+    icon: Glasses,
+    title: 'Optics',
+    photo: P.outpatient,
+    text: 'Vision examinations, corrective lens fittings and standard optical assessments for all ages.',
+    overview: 'Our optical service covers vision testing and corrective eyewear, helping you see clearly and comfortably. We assess your sight, fit the right lenses and advise on the eyewear that suits your needs.',
+    categories: [
+      { title: 'Vision examinations', items: ['Comprehensive eye test', 'Vision and sight assessment', 'Prescription updates'] },
+      { title: 'Prescription glasses', items: ['Corrective lens fitting', 'Reading and distance glasses', 'Prescription eyewear dispensing'] },
+      { title: 'Frames & lens options', items: ['Single vision, bifocal and progressive lenses', 'Anti-glare and scratch-resistant coatings', 'Photochromic and blue-light lenses'] },
+      { title: 'Contact lenses', items: ['Contact lens fitting', 'Contact lens aftercare', 'Advice on lens care and use'] },
+      { title: 'Sunglasses & protective eyewear', items: ['Prescription sunglasses', 'UV-protective eyewear', 'Protective and safety eyewear'] },
+      { title: 'Children’s eyewear', items: ['Children’s vision screening', 'School vision testing', 'Children’s frames and lenses'] },
+    ],
   },
   {
-    slug: 'chronic-disease-management',
-    icon: Activity,
-    title: 'Chronic Disease Management',
-    photo: P.exercise,
-    text: 'Ongoing care for conditions such as high blood pressure and diabetes, with regular review.',
-    overview: 'Chronic disease management supports patients living with long-term conditions through regular review, treatment and lifestyle guidance.',
-    conditions: ['Long-term conditions needing regular review', 'High blood pressure and diabetes follow-up', 'Ongoing medication management'],
-    treatments: ['Regular review consultations', 'Treatment and monitoring', 'Lifestyle and self-care guidance', 'Referral when specialist input is needed'],
-  },
-  {
-    slug: 'laboratory-diagnostics',
-    icon: FlaskConical,
-    title: 'Laboratory & Diagnostics',
-    photo: P.lab,
-    text: 'Tests and investigations that help your doctor choose the right treatment, faster.',
-    overview: 'The laboratory and diagnostics service supports your doctor with tests and investigations, helping guide timely and appropriate treatment decisions.',
-    conditions: ['Tests requested by your doctor', 'Routine and diagnostic investigations'],
-    treatments: ['Blood and laboratory tests', 'Diagnostic investigations', 'Results reporting to guide treatment'],
-  },
-  {
-    slug: 'minor-procedures',
-    icon: Scissors,
-    title: 'Minor Procedures & Wound Care',
-    photo: P.surgery,
-    text: 'Outpatient procedures and wound care carried out in a clean, supervised setting.',
-    overview: 'Minor procedures cover a range of outpatient treatments and wound care carried out in a clean, supervised setting, with follow-up and review.',
-    conditions: ['Minor injuries and wounds needing treatment', 'Small procedures assessed as suitable for a clinic setting', 'Follow-up after a procedure'],
-    treatments: ['Wound care and dressings', 'Minor outpatient procedures', 'Follow-up and review'],
+    slug: 'specialist-consultations',
+    icon: Stethoscope,
+    title: 'Specialist Consultations',
+    photo: P.hero,
+    text: 'Advanced outpatient clinic care featuring visiting medical consultants and general medical case assessments.',
+    overview: 'Our specialist consultation clinics give you access to advanced outpatient care and visiting medical consultants. We assess your case, arrange any needed tests and coordinate onward referral where specialist input is required.',
+    categories: [
+      { title: 'Visiting consultant clinics', items: ['Scheduled specialist clinics', 'Consultant-led assessments', 'Access to visiting specialists'] },
+      { title: 'General medical assessments', items: ['Everyday illness and infections', 'General health concerns', 'Routine check-ups'] },
+      { title: 'Specialist referrals', items: ['Referral to the right specialist', 'Second opinions', 'Coordination of onward care'] },
+      { title: 'Follow-up & review', items: ['Review after treatment', 'Ongoing condition follow-up', 'Preventive health advice'] },
+    ],
   },
 ]
 
 export const FEATURED = [
-  { icon: Stethoscope, title: 'Specialist Consultations', photo: '/images/service1.jpg', text: 'Medical consultations for everyday illness, long-term conditions and referral to the right specialist.' },
-  { icon: HeartPulse, title: 'Women’s Health & Antenatal', photo: P.maternity, text: 'Pregnancy-related consultations and women’s health services, with details of available clinics and care options.' },
-  { icon: FlaskConical, title: 'Laboratory & Diagnostics', photo: P.lab, text: 'Diagnostic investigations that support medical assessment and treatment decisions.' },
+  { icon: Sparkles, title: 'Dermatology & Skin Care', photo: '/images/service1.jpg', text: 'Consultations and advanced therapies for acute and chronic skin, hair and nail conditions.' },
+  { icon: Eye, title: 'Ophthalmology', photo: P.doctor, text: 'Expert medical and surgical eye care for complex optical disorders.' },
+  { icon: Glasses, title: 'Optics', photo: P.outpatient, text: 'Vision examinations, corrective lens fittings and standard optical assessments.' },
 ]
 
 export const NAV = [['/', 'Home'], ['/about', 'About Us'], ['/services', 'Our Services'], ['/doctors', 'Our Specialists'], ['/health-tips', 'Health Tips']]
