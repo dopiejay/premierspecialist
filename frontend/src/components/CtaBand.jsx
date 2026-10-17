@@ -4,7 +4,7 @@ import Eyebrow from './Eyebrow'
 import Button from './Button'
 import { H, tel, P } from '../data/site'
 
-export default function CtaBand({ eyebrow, title, text, photo = P.emergency, alt = '' }) {
+export default function CtaBand({ eyebrow, title, text, photo = P.outpatient, alt = '' }) {
   return (
     <section className="relative overflow-hidden bg-purple">
       <Photo id={photo} alt={alt} className="absolute inset-0 w-full h-full opacity-25" />

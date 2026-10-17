@@ -6,7 +6,7 @@ import { z } from 'zod'
 import rateLimit from 'express-rate-limit'
 import { pool } from './db.js'
 
-const COOKIE = 'sh_admin'
+const COOKIE = 'psc_admin'
 const STATUSES = ['pending', 'contacted', 'confirmed', 'completed', 'cancelled']
 const DUMMY_HASH = bcrypt.hashSync('not-a-real-password', 10)
 const limiter = (windowMin, max, error) => rateLimit({ windowMs: windowMin * 60_000, limit: max, standardHeaders: true, legacyHeaders: false, message: { error } })
@@ -59,7 +59,7 @@ const apptSchema = z.object({
   message: z.string().trim().max(500).optional(),
   website: z.string().optional(), // honeypot
 })
-const newRef = () => 'SH-' + Array.from(crypto.randomBytes(6), (b) => 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[b % 32]).join('')
+const newRef = () => 'PSC-' + Array.from(crypto.randomBytes(6), (b) => 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[b % 32]).join('')
 r.post('/appointments', limiter(60, 10, 'Too many requests. Please call us instead.'), async (req, res) => {
   const p = apptSchema.safeParse(req.body)
   if (!p.success) return res.status(400).json({ error: p.error.issues[0]?.message || 'Please check your details' })

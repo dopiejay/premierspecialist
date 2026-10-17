@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <AboutPreview />
       <FeaturedServices />
-      <CtaBand eyebrow="Emergency & walk-in" title="Care when you need it most" text="Walk-in care and emergency arrangements are available every day. Call ahead to confirm hours, or come straight in." alt="Shifa Hospital emergency care" />
+      <CtaBand eyebrow="Appointments" title="Book a specialist consultation" text="Send us an appointment request and our reception team will contact you to confirm a time. Please book ahead — walk-in care is not available." alt="Premier Specialist Clinic consultation" />
       <Insurance />
     </>
   )

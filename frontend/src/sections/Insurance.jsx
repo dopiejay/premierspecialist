@@ -17,7 +17,7 @@ export default function Insurance() {
           <Button to="/book">Ask about your cover <ArrowRight size={18} /></Button>
         </Reveal>
         <Reveal delay={120} className="relative">
-          <img src="/images/insurance.jpg" alt="Hospital reception" className="w-full h-[420px] rounded-[1.75rem] shadow-xl object-cover" />
+          <img src="/images/insurance.jpg" alt="Premier Specialist Clinic reception" className="w-full h-[420px] rounded-[1.75rem] shadow-xl object-cover" />
         </Reveal>
       </div>
     </section>

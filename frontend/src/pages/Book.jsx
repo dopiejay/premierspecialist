@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { CalendarCheck, Clock, MapPin, Phone } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import Button from '../components/Button'
-import { SERVICES, H } from '../data/site'
+import { SERVICES, H, HOURS } from '../data/site'
 
 export default function Book() {
   const [sent, setSent] = useState(false)
@@ -51,15 +51,15 @@ export default function Book() {
               <input name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
               {error && <p className="text-sm text-red-600 font-semibold">{error}</p>}
               <Button type="submit" size="lg" disabled={busy}>{busy ? 'Sending…' : 'Request appointment'}</Button>
-              <p className="text-xs text-ink/60">For emergencies, call us or walk in. Do not use this form.</p>
+              <p className="text-xs text-ink/60">For urgent medical emergencies, please go to your nearest hospital emergency department.</p>
             </>
           )}
         </form>
         <aside className="lg:col-span-2 space-y-5">
-          {[[MapPin, 'Find us', `${H.address}. ${H.landmark}.`], [Phone, 'Call', H.phone], [Clock, 'Hours', 'Open every day, including walk-in care. Call ahead to confirm hours.']].map(([Icon, t, d]) => (
+          {[[MapPin, 'Find us', `${H.address}.`], [Phone, 'Call', H.phone], [Clock, 'Hours', HOURS]].map(([Icon, t, d]) => (
             <div key={t} className="flex gap-4 bg-mint rounded-2xl p-5"><span className="w-11 h-11 rounded-xl bg-white text-cyan grid place-items-center shrink-0"><Icon size={20} /></span><p><b className="text-charcoal">{t}</b><br /><span className="text-ink/70 text-sm">{d}</span></p></div>
           ))}
-          <iframe title="Map" loading="lazy" className="w-full h-64 rounded-2xl border-0" src="https://www.google.com/maps?q=Shifa+Hospital+Fatima+Arcade+Haile+Selassie+Road+Blantyre&output=embed" />
+          <iframe title="Map" loading="lazy" className="w-full h-64 rounded-2xl border-0" src="https://www.google.com/maps?q=Premier+Specialist+Clinic+Beaton+Blantyre&output=embed" />
         </aside>
       </section>
     </>

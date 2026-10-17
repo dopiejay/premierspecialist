@@ -1,4 +1,4 @@
-import { CalendarCheck, Siren, Stethoscope } from 'lucide-react'
+import { CalendarCheck, Phone, Stethoscope } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import Section from '../components/Section'
 import SectionHeader from '../components/SectionHeader'
@@ -7,9 +7,9 @@ import PromoBand from '../components/PromoBand'
 import { SERVICES } from '../data/site'
 
 const ACCESS = [
-  [Siren, 'Walk-in care', 'Come in without a booking when you need urgent attention.'],
-  [CalendarCheck, 'Appointments', 'Request a time and our reception confirms the details.'],
+  [CalendarCheck, 'Appointments', 'Request a time and our reception team confirms the details.'],
   [Stethoscope, 'Referrals', 'Referred by another clinician? Bring your notes with you.'],
+  [Phone, 'Enquiries', 'Call reception with questions about services, fees or availability.'],
 ]
 
 export default function Services() {
@@ -18,7 +18,7 @@ export default function Services() {
       <PageHero kicker="Medical services" title="Medical Services" text="Explore our healthcare services and find the information you need before your visit." src="/images/servicepage.jpg" showActions={false} />
 
       <Section bg="white">
-        <SectionHeader eyebrow="Getting started" title="How to access care" text="Choose the route that fits your needs — whether it’s a routine consultation, an urgent concern or a referral." />
+        <SectionHeader eyebrow="Getting started" title="How to access care" text="Choose the route that fits your needs — a routine consultation, a specialist referral or a general enquiry." />
         <div className="grid sm:grid-cols-3 gap-6 mt-12">
           {ACCESS.map(([Icon, t, d]) => (
             <div key={t} className="flex gap-4 rounded-2xl border border-slate-200 p-6">

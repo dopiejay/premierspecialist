@@ -9,9 +9,9 @@ import { TEAM } from '../data/site'
 export default function Doctors() {
   return (
     <>
-      <PageHero kicker="Our team" title="Our Doctors & Specialists" text="Meet the specialists providing care across our departments." src="/images/doctors.jpg" alt="Shifa Hospital doctors" />
+      <PageHero kicker="Our team" title="Our Specialists" text="Meet the specialists providing care at Premier Specialist Clinic." src="/images/doctors.jpg" alt="Premier Specialist Clinic specialists" />
       <Section bg="white">
-        <SectionHeader eyebrow="Meet the team" title="Clinicians & specialists" text="Experienced doctors and specialists across medicine, maternity, surgery, diagnostics and dental services." />
+        <SectionHeader eyebrow="Meet the team" title="Specialists & clinicians" text="Specialists across internal medicine, women’s health, paediatrics, chronic care, diagnostics and dental services." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {TEAM.map((d) => (
             <div key={d.slug} className="group flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden hover:shadow-xl transition">
@@ -29,6 +29,7 @@ export default function Doctors() {
             </div>
           ))}
         </div>
+        <p className="mt-8 text-sm text-ink/50">Practitioner profiles are illustrative placeholders for this concept and will be replaced with verified, approved details before launch.</p>
       </Section>
     </>
   )

@@ -1,15 +1,20 @@
 @import "tailwindcss";
 @theme {
-  --color-purple: #600CA0;
-  --color-purple-dark: #4A0878;
-  --color-charcoal: #20242B;
-  --color-cyan: #00ADF1;
-  --color-cyan-dark: #0086BC;
-  --color-yellow: #F2D51A;
-  --color-green: #198A2D;
-  --color-ink: #241B2E;
-  --color-cloud: #F2F2F2;
-  --color-mint: #F2F2F2;
+  /* Premier Specialist Clinic palette — sampled from the clinic banner (working estimates).
+     Token names are legacy from the previous build; treat them as roles:
+     purple = clinic green (primary), cyan = deep blue (secondary/accent),
+     charcoal = dark surfaces + headings, ink = body text, yellow = light accent on dark,
+     green = success, cloud/mint = soft green/blue tints. */
+  --color-purple: #279B60;
+  --color-purple-dark: #1F7D4D;
+  --color-charcoal: #263238;
+  --color-cyan: #283D91;
+  --color-cyan-dark: #1F2F73;
+  --color-yellow: #A7E3C2;
+  --color-green: #279B60;
+  --color-ink: #263238;
+  --color-cloud: #EAF5EF;
+  --color-mint: #EEF1FA;
   --font-sans: "Outfit", system-ui, sans-serif;
   --font-display: "Outfit", system-ui, sans-serif;
 }
@@ -19,5 +24,5 @@ body { @apply bg-white text-ink antialiased; }
 @keyframes draw { to { stroke-dashoffset: -420; } }
 .float { animation: float 6s ease-in-out infinite; }
 @keyframes float { 50% { transform: translateY(-12px); } }
-.dots { background-image: radial-gradient(rgba(0,173,241,.16) 1.5px, transparent 1.5px); background-size: 22px 22px; }
+.dots { background-image: radial-gradient(rgba(40,61,145,.16) 1.5px, transparent 1.5px); background-size: 22px 22px; }
 .dots-w { background-image: radial-gradient(rgba(255,255,255,.14) 1.5px, transparent 1.5px); background-size: 22px 22px; }

@@ -1,11 +1,17 @@
-import { Stethoscope, HeartPulse, Siren, Baby, Scissors, FlaskConical, Smile, Droplets, Salad, Activity, Moon, Brain, ShieldCheck } from 'lucide-react'
+import { Stethoscope, HeartPulse, Activity, Baby, FlaskConical, Scissors, Smile, Droplets, Salad, Moon, Brain, ShieldCheck } from 'lucide-react'
 
-// TODO: confirm every value with the hospital before going live.
-export const H = { phone: '+265 212 832 415', address: '1st Floor, Fatima Arcade, Haile Selassie Road, Blantyre CBD', landmark: 'Directly above KFC' }
+// TODO: confirm every value with Premier Specialist Clinic before going live.
+// Contact details below are from the clinic's public directory listing (MapXplore) and are pending verification.
+export const H = {
+  phone: '+265 999 562 272',
+  email: 'premclinics@gmail.com',
+  address: 'Off Ndola Road, Beaton, Blantyre',
+}
 export const tel = `tel:${H.phone.replace(/\s/g, '')}`
-export const DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=Shifa+Hospital+Fatima+Arcade+Blantyre'
+export const DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=Premier+Specialist+Clinic+Beaton+Blantyre'
+export const HOURS = 'Mon–Fri 08:00–17:00 · Sat 08:00–12:00 · Sun closed'
 
-// Stock placeholders (Unsplash). Replace with real Shifa photos in src/assets when available.
+// Stock placeholders (Unsplash). Replace with real Premier Specialist Clinic photos in src/assets when available.
 export const img = (id, w = 1200) =>
   /^(https?:)?\/\//.test(id) || id.startsWith('/')
     ? id
@@ -13,64 +19,54 @@ export const img = (id, w = 1200) =>
 export const P = {
   hero: '1576091160399-112ba8d25d1d', doctor: '1612349317150-e413f6a5b16d', lab: '1579154204601-01588f351e67',
   dental: '1606811841689-23dfddce3e95', surgery: '1551076805-e1869033e561', hospital: '1519494026892-80bbd2d6fd0d',
-  emergency: '1587351021759-3e566b6af7cc', maternity: '1555252333-9f8e92e65df9', baby: '1584515933487-779824d29309', outpatient: '1559757148-5c350d0d3c56',
+  maternity: '1555252333-9f8e92e65df9', baby: '1584515933487-779824d29309', outpatient: '1559757148-5c350d0d3c56',
   water: '1523362628745-0c100150b504', diet: '1512621776951-a57141f2eefd', exercise: '1534438327276-14e5300c3a48',
   sleep: '1541781774459-bb2af2f05b55', mind: '1506126613408-eca07ce68773', smoke: '1573497019940-1c28c88b4f3e',
   doc1: '1622253692010-333f2da6031d', doc2: '1594824476967-48c8b964273f', doc3: '1537368910025-700350fe46c7',
   doc4: '1582750433449-648ed127bb54', doc5: '1559839734-2b71ea197ec2', doc6: '1651008376811-b90baee60c1f',
 }
 
-// Detail content (conditions/treatments) is placeholder copy pending clinical verification.
+// Specialist-clinic services. Detail content is placeholder copy pending clinical verification.
 export const SERVICES = [
   {
-    slug: 'outpatient-internal-medicine',
+    slug: 'internal-medicine-consultations',
     icon: Stethoscope,
-    title: 'Outpatient & Internal Medicine',
+    title: 'Internal Medicine & Specialist Consultations',
     photo: '/images/service1.jpg',
-    text: 'Consultations for everyday illness, chronic condition follow-up and referrals to the right specialist.',
-    overview: 'Outpatient and internal medicine is the first point of contact for most patients. Consultations cover everyday illness, ongoing conditions and general health concerns, with referrals made to the right specialist when needed.',
-    conditions: ['Everyday illness such as colds, flu and infections', 'Chronic conditions that need ongoing follow-up', 'General health concerns and routine check-ups'],
-    treatments: ['General medical consultations', 'Chronic disease follow-up', 'Referrals to specialist care', 'Preventive health advice'],
+    text: 'Consultations for everyday illness, long-term conditions and referral to the right specialist.',
+    overview: 'Internal medicine consultations are the first point of contact for most patients. Consultations cover everyday illness, ongoing conditions and general health concerns, with referral to other specialists when needed.',
+    conditions: ['Everyday illness such as colds, flu and infections', 'Long-term conditions that need ongoing follow-up', 'General health concerns and routine check-ups'],
+    treatments: ['Specialist medical consultations', 'Long-term condition follow-up', 'Referral to other specialists', 'Preventive health advice'],
   },
   {
-    slug: 'emergency-walk-in-care',
-    icon: Siren,
-    title: 'Emergency & Walk-in Care',
-    photo: P.emergency,
-    text: 'Open around the clock. No strict booking needed when you need urgent medical attention.',
-    overview: 'Emergency and walk-in care supports patients who need prompt medical attention. Our team assesses your condition and provides urgent treatment where available, or arranges referral when specialist care is required.',
-    conditions: ['Urgent concerns that need prompt attention', 'Minor injuries and sudden illness', 'Concerns outside regular clinic times'],
-    treatments: ['Initial assessment and stabilisation', 'Urgent treatment where available', 'Referral or transfer when specialist care is needed'],
-  },
-  {
-    slug: 'maternity-gynaecology',
+    slug: 'womens-health-antinatal',
     icon: HeartPulse,
-    title: 'Maternity & Gynaecology',
+    title: 'Women’s Health & Antenatal Care',
     photo: P.maternity,
-    text: 'Antenatal care and women’s health, with specialist clinics held on scheduled days.',
-    overview: 'Maternity and gynaecology services support women through pregnancy and beyond, alongside general women’s health care, with specialist clinics held on scheduled days.',
+    text: 'Antenatal care, women’s health and family planning, with specialist clinics on scheduled days.',
+    overview: 'Women’s health and antenatal care support women through pregnancy and beyond, alongside general gynaecological care, with specialist clinics held on scheduled days.',
     conditions: ['Pregnancy and antenatal concerns', 'Women’s health and gynaecological needs', 'Family planning discussions'],
     treatments: ['Antenatal consultations', 'Women’s health clinics', 'Scheduled specialist reviews'],
   },
   {
-    slug: 'neonatal-care-nicu',
+    slug: 'paediatrics-child-health',
     icon: Baby,
-    title: 'Neonatal Care (NICU)',
+    title: 'Paediatrics & Child Health',
     photo: P.baby,
-    text: 'Specialised care for newborns who need close monitoring in their first days.',
-    overview: 'Neonatal care provides close monitoring and support for newborns who need it in their first days, working alongside the maternity team.',
-    conditions: ['Newborns needing close monitoring', 'Babies who need extra support in their first days'],
-    treatments: ['Newborn monitoring', 'Newborn care alongside the maternity team', 'Referral when specialist neonatal care is required'],
+    text: 'Care for infants, children and adolescents, including growth, nutrition and immunisation advice.',
+    overview: 'Paediatrics and child health covers the medical needs of infants, children and adolescents, from routine check-ups to the management of childhood illness.',
+    conditions: ['Childhood illness and infections', 'Growth, nutrition and development concerns', 'Routine child health checks'],
+    treatments: ['Paediatric consultations', 'Child health and development reviews', 'Immunisation advice and referral', 'Referral for specialist paediatric care'],
   },
   {
-    slug: 'surgery-theatres',
-    icon: Scissors,
-    title: 'Surgery & Theatres',
-    photo: P.surgery,
-    text: 'Assessment, operating theatre procedures and follow-up care under one roof.',
-    overview: 'Our surgical service covers assessment, operating theatre procedures and follow-up care, coordinated under one roof.',
-    conditions: ['Conditions assessed as needing a surgical opinion', 'Planned procedures following consultation'],
-    treatments: ['Pre-operative assessment', 'Operating theatre procedures', 'Post-operative and follow-up care'],
+    slug: 'chronic-disease-management',
+    icon: Activity,
+    title: 'Chronic Disease Management',
+    photo: P.exercise,
+    text: 'Ongoing care for conditions such as high blood pressure and diabetes, with regular review.',
+    overview: 'Chronic disease management supports patients living with long-term conditions through regular review, treatment and lifestyle guidance.',
+    conditions: ['Long-term conditions needing regular review', 'High blood pressure and diabetes follow-up', 'Ongoing medication management'],
+    treatments: ['Regular review consultations', 'Treatment and monitoring', 'Lifestyle and self-care guidance', 'Referral when specialist input is needed'],
   },
   {
     slug: 'laboratory-diagnostics',
@@ -83,26 +79,26 @@ export const SERVICES = [
     treatments: ['Blood and laboratory tests', 'Diagnostic investigations', 'Results reporting to guide treatment'],
   },
   {
-    slug: 'dental-care-implants',
-    icon: Smile,
-    title: 'Dental Care & Implants',
-    photo: '/images/dental.jpg',
-    text: 'Check-ups and treatment through our dedicated dental and implant centre.',
-    overview: 'Dental care and implants are provided through our dedicated dental centre, covering routine check-ups, treatment and implant enquiries.',
-    conditions: ['Routine dental and oral health needs', 'Missing teeth and implant enquiries'],
-    treatments: ['Dental check-ups', 'Dental treatment', 'Implant assessment and treatment'],
+    slug: 'minor-procedures',
+    icon: Scissors,
+    title: 'Minor Procedures & Wound Care',
+    photo: P.surgery,
+    text: 'Outpatient procedures and wound care carried out in a clean, supervised setting.',
+    overview: 'Minor procedures cover a range of outpatient treatments and wound care carried out in a clean, supervised setting, with follow-up and review.',
+    conditions: ['Minor injuries and wounds needing treatment', 'Small procedures assessed as suitable for a clinic setting', 'Follow-up after a procedure'],
+    treatments: ['Wound care and dressings', 'Minor outpatient procedures', 'Follow-up and review'],
   },
 ]
 
 export const FEATURED = [
-  { icon: Stethoscope, title: 'General & Outpatient Care', photo: '/images/service1.jpg', text: 'Medical consultations for common illnesses, routine health concerns and follow-up visits, subject to available services.' },
-  { icon: HeartPulse, title: 'Maternity & Women’s Health', photo: P.maternity, text: 'Pregnancy-related consultations and women’s health services, with details of available clinics and care options.' },
+  { icon: Stethoscope, title: 'Specialist Consultations', photo: '/images/service1.jpg', text: 'Medical consultations for everyday illness, long-term conditions and referral to the right specialist.' },
+  { icon: HeartPulse, title: 'Women’s Health & Antenatal', photo: P.maternity, text: 'Pregnancy-related consultations and women’s health services, with details of available clinics and care options.' },
   { icon: FlaskConical, title: 'Laboratory & Diagnostics', photo: P.lab, text: 'Diagnostic investigations that support medical assessment and treatment decisions.' },
 ]
 
-export const NAV = [['/', 'Home'], ['/about', 'About Us'], ['/services', 'Medical Services'], ['/doctors', 'Our Doctors'], ['/health-tips', 'Health Tips']]
+export const NAV = [['/', 'Home'], ['/about', 'About Us'], ['/services', 'Our Services'], ['/doctors', 'Our Specialists'], ['/health-tips', 'Health Tips']]
 
-// General wellness content (demo copy — pending review by the hospital). Shape is CMS-ready.
+// General wellness content (demo copy — pending review by the clinic). Shape is CMS-ready.
 export const TIPS = [
   {
     slug: 'stay-hydrated', icon: Droplets, tag: 'Everyday health', title: 'Stay hydrated', photo: P.water,
@@ -136,29 +132,30 @@ export const TIPS = [
   },
 ]
 
+// Illustrative placeholder profiles — replace with verified, approved details before launch.
 export const TEAM = [
   {
     slug: 'dr-alinafe-banda', name: 'Dr. Alinafe Banda', specialty: 'Internal Medicine', icon: Stethoscope, qualifications: 'MBBS, MRCP (UK)', photo: P.doc1,
-    bio: 'Dr. Banda diagnoses and manages everyday and long-term medical conditions, and coordinates referrals to specialist care. He sees patients in our outpatient clinic.',
+    bio: 'Dr. Banda diagnoses and manages everyday and long-term medical conditions, and coordinates referral to other specialists. He sees patients in the consultation clinic.',
   },
   {
     slug: 'dr-chikondi-phiri', name: 'Dr. Chikondi Phiri', specialty: 'Obstetrics & Gynaecology', icon: HeartPulse, qualifications: 'MBBS, MRCOG', photo: P.doc2,
     bio: 'Dr. Phiri supports women through pregnancy and general gynaecological care, with a focus on safe antenatal and postnatal care.',
   },
   {
-    slug: 'dr-yamikani-mwale', name: 'Dr. Yamikani Mwale', specialty: 'General Surgery', icon: Scissors, qualifications: 'MBBS, FRCS', photo: P.doc3,
-    bio: 'Dr. Mwale provides surgical assessment, operating theatre procedures and follow-up care across a range of general surgical conditions.',
-  },
-  {
-    slug: 'dr-thandiwe-nyirenda', name: 'Dr. Thandiwe Nyirenda', specialty: 'Paediatrics & Neonatal Care', icon: Baby, qualifications: 'MBBS, MMed (Paediatrics)', photo: P.doc4,
-    bio: 'Dr. Nyirenda cares for infants and children, including newborns who need close monitoring in their first days.',
+    slug: 'dr-thandiwe-nyirenda', name: 'Dr. Thandiwe Nyirenda', specialty: 'Paediatrics & Child Health', icon: Baby, qualifications: 'MBBS, MMed (Paediatrics)', photo: P.doc4,
+    bio: 'Dr. Nyirenda cares for infants, children and adolescents, including routine child health and development reviews.',
   },
   {
     slug: 'dr-grace-kamanga', name: 'Dr. Grace Kamanga', specialty: 'Family Medicine', icon: FlaskConical, qualifications: 'MBBS, MMed (Family Medicine)', photo: P.doc5,
     bio: 'Dr. Kamanga provides family-centred care for patients of all ages, with an emphasis on prevention and continuity of care.',
   },
   {
+    slug: 'dr-yamikani-mwale', name: 'Dr. Yamikani Mwale', specialty: 'Chronic Disease Management', icon: Activity, qualifications: 'MBBS, MRCGP', photo: P.doc3,
+    bio: 'Dr. Mwale manages long-term conditions such as high blood pressure and diabetes through regular review, treatment and lifestyle guidance.',
+  },
+  {
     slug: 'dr-mphatso-gondwe', name: 'Dr. Mphatso Gondwe', specialty: 'Dental Surgery', icon: Smile, qualifications: 'BDS', photo: P.doc6,
-    bio: 'Dr. Gondwe leads our dental service, covering routine check-ups, treatment and implant assessment.',
+    bio: 'Dr. Gondwe provides routine dental check-ups, treatment and oral health advice.',
   },
 ]

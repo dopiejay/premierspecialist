@@ -25,4 +25,4 @@ app.use('/api', routes)
 app.use('/api', (req, res) => res.status(404).json({ error: 'Not found' }))
 // Never log request bodies: they contain patient contact details
 app.use((err, req, res, next) => { console.error(err.message); res.status(500).json({ error: 'Something went wrong' }) })
-app.listen(process.env.PORT || 4000, () => console.log('Shifa API running'))
+app.listen(process.env.PORT || 4000, () => console.log('Premier Specialist Clinic API running'))

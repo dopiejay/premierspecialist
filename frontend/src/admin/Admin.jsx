@@ -25,7 +25,7 @@ function Login({ onLogin }) {
     <div className="min-h-screen grid lg:grid-cols-2">
       <div className="hidden lg:flex flex-col justify-between bg-gradient-to-br from-purple to-purple-dark text-white p-14 relative overflow-hidden">
         <div className="dots-w absolute inset-0" />
-        <div className="relative flex items-center gap-3"><span className="w-11 h-11 rounded-2xl bg-white/15 grid place-items-center"><Activity /></span><span className="font-display text-2xl font-bold">Shifa Hospital</span></div>
+        <div className="relative flex items-center gap-3"><span className="w-11 h-11 rounded-2xl bg-white/15 grid place-items-center"><Activity /></span><span className="font-display text-2xl font-bold">Premier Specialist Clinic</span></div>
         <div className="relative"><h1 className="font-display text-5xl font-bold leading-tight">Manage the website and appointment requests.</h1><p className="mt-4 text-white/70 text-lg">Staff portal. Authorised users only.</p></div>
         <p className="relative text-sm text-white/50">Concept demo</p>
       </div>
@@ -52,7 +52,7 @@ function Shell({ user, onLogout, children }) {
   return (
     <div className="min-h-screen lg:flex bg-cloud">
       <aside className="lg:w-64 lg:min-h-screen bg-purple text-white p-4 lg:p-5 flex lg:flex-col gap-2 overflow-x-auto">
-        <div className="hidden lg:flex items-center gap-3 px-2 py-3 mb-4"><span className="w-10 h-10 rounded-xl bg-white/15 grid place-items-center"><Activity size={20} /></span><span className="font-display text-xl font-bold">Shifa Admin</span></div>
+        <div className="hidden lg:flex items-center gap-3 px-2 py-3 mb-4"><span className="w-10 h-10 rounded-xl bg-white/15 grid place-items-center"><Activity size={20} /></span><span className="font-display text-xl font-bold">Premier Admin</span></div>
         {LINKS.map(([to, Icon, label, end]) => <NavLink key={to} to={to} end={end} className={cls}><Icon size={18} /> {label}</NavLink>)}
         <p className="hidden lg:block text-[11px] tracking-widest font-bold text-white/40 mt-6 px-4">COMING NEXT</p>
         {SOON.map(([Icon, label]) => <span key={label} className="hidden lg:flex items-center gap-3 px-4 py-2.5 text-sm text-white/40"><Icon size={18} /> {label}</span>)}

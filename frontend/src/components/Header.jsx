@@ -20,7 +20,7 @@ export default function Header() {
       </div>
       <div className="bg-white/95 backdrop-blur border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-5 h-[72px] flex items-center justify-between">
-          <Link to="/" className="font-display text-2xl font-bold tracking-tight text-purple">Shifa Hospital</Link>
+          <Link to="/" className="font-display text-2xl font-bold tracking-tight text-purple">Premier Specialist Clinic</Link>
           <nav className="hidden lg:flex items-center gap-1">
             {NAV.map(([to, l]) => <NavLink key={to} to={to} end={to === '/'} className={link}>{l}</NavLink>)}
             <Button to="/book" variant="primary" size="sm" className="ml-3">Book an Appointment</Button>

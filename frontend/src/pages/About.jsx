@@ -21,7 +21,7 @@ const APPROACH = [
 export default function About() {
   return (
     <>
-      <PageHero kicker="About Shifa Hospital" title="Care That Puts People First." text="Get to know Shifa Hospital, our approach to healthcare, and our commitment to providing a welcoming and professional experience for every patient." src="/images/doc.jpg" alt="A healthcare professional at Shifa Hospital">
+      <PageHero kicker="About Premier Specialist Clinic" title="Care That Puts People First." text="Get to know Premier Specialist Clinic, our approach to healthcare, and our commitment to providing a welcoming and professional experience for every patient." src="/images/doc.jpg" alt="A healthcare professional at Premier Specialist Clinic">
         <Button to="/services" variant="cyan">Explore Our Services <ArrowRight size={18} /></Button>
         <Button to="/book" variant="ghostLight">Contact Us</Button>
       </PageHero>
@@ -30,11 +30,11 @@ export default function About() {
         <Reveal>
           <Eyebrow>Who We Are</Eyebrow>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Healthcare with Purpose</h2>
-          <p className="text-ink/70 text-lg leading-relaxed">Shifa Hospital is a healthcare facility serving the people of Blantyre, Malawi. We bring together clinicians, nurses and diagnostic teams to provide accessible, patient-centred care across our medical services.</p>
+          <p className="text-ink/70 text-lg leading-relaxed">Premier Specialist Clinic is a specialist outpatient clinic serving the people of Blantyre, Malawi. We bring together clinicians and diagnostic teams to provide accessible, patient-centred care across our medical services.</p>
           <p className="text-ink/70 text-lg leading-relaxed mt-4">From everyday consultations to specialist care, our focus is on treating every patient with dignity, clear communication and professionalism.</p>
         </Reveal>
         <Reveal delay={120}>
-          <img src="/images/about.jpg" alt="Shifa Hospital" className="w-full h-[420px] rounded-2xl object-cover shadow-xl" />
+          <img src="/images/about.jpg" alt="Premier Specialist Clinic" className="w-full h-[420px] rounded-2xl object-cover shadow-xl" />
         </Reveal>
       </section>
 
@@ -60,7 +60,7 @@ export default function About() {
               </ul>
             </Reveal>
           </div>
-          <p className="mt-8 text-sm text-ink/50">Mission, vision and values are proposed for this concept and are pending confirmation by Shifa Hospital management.</p>
+          <p className="mt-8 text-sm text-ink/50">Mission, vision and values are proposed for this concept and are pending confirmation by Premier Specialist Clinic management.</p>
         </div>
       </section>
 
@@ -85,7 +85,7 @@ export default function About() {
           <div className="max-w-2xl">
             <Eyebrow light>Next Steps</Eyebrow>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white mt-3">Your Healthcare Journey Starts Here.</h2>
-            <p className="mt-4 text-white/80 text-lg leading-relaxed">Explore the services available at Shifa Hospital or contact the hospital to enquire about your healthcare needs.</p>
+            <p className="mt-4 text-white/80 text-lg leading-relaxed">Explore the services available at Premier Specialist Clinic or contact the clinic to enquire about your healthcare needs.</p>
           </div>
           <div className="flex flex-wrap gap-3 lg:shrink-0">
             <Button to="/services" variant="cyan">Explore Medical Services <ArrowRight size={18} /></Button>

@@ -15,12 +15,12 @@ export default function AboutPreview() {
     <section className="bg-cloud py-24">
       <div className="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <Reveal className="relative order-2 lg:order-1">
-          <img src="/images/about.jpg" alt="Shifa Hospital building" className="w-full h-[380px] lg:h-[480px] rounded-[1.75rem] shadow-xl object-cover" />
+          <img src="/images/about.jpg" alt="Premier Specialist Clinic" className="w-full h-[380px] lg:h-[480px] rounded-[1.75rem] shadow-xl object-cover" />
         </Reveal>
         <Reveal delay={120} className="order-1 lg:order-2">
-          <Eyebrow>About Shifa</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">A private hospital at the heart of Blantyre</h2>
-          <p className="text-ink/70 text-lg leading-relaxed">Compassionate, professional and patient-centred healthcare in a respectful environment. We support individuals and families through accessible services and clear communication — from everyday consultations to specialist care.</p>
+          <Eyebrow>About Premier Specialist Clinic</Eyebrow>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Specialist care in the heart of Blantyre</h2>
+          <p className="text-ink/70 text-lg leading-relaxed">Professional, patient-centred care in a respectful environment. We support individuals and families through accessible specialist consultations, diagnostics and clear communication.</p>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 mt-9">
             {POINTS.map(([Icon, t, d]) => (
               <div key={t} className="flex gap-4">
