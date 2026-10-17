@@ -9,8 +9,11 @@ import About from './pages/About'
 import Doctors from './pages/Doctors'
 import DoctorProfile from './pages/DoctorProfile'
 import Book from './pages/Book'
-import HealthTips from './pages/HealthTips'
-import HealthTipDetail from './pages/HealthTipDetail'
+import PatientInfo from './pages/PatientInfo'
+import PatientAppointments from './pages/PatientAppointments'
+import PatientPreparing from './pages/PatientPreparing'
+import PatientFees from './pages/PatientFees'
+import PatientFaq from './pages/PatientFaq'
 import Admin from './admin/Admin'
 
 function SiteLayout() {
@@ -38,8 +41,11 @@ export default function App() {
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/doctors/:slug" element={<DoctorProfile />} />
         <Route path="/book" element={<Book />} />
-        <Route path="/health-tips" element={<HealthTips />} />
-        <Route path="/health-tips/:slug" element={<HealthTipDetail />} />
+        <Route path="/patient-info" element={<PatientInfo />} />
+        <Route path="/patient-info/appointments" element={<PatientAppointments />} />
+        <Route path="/patient-info/preparing" element={<PatientPreparing />} />
+        <Route path="/patient-info/fees-insurance" element={<PatientFees />} />
+        <Route path="/patient-info/faq" element={<PatientFaq />} />
       </Route>
     </Routes>
   )

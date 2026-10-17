@@ -1,4 +1,4 @@
-import { Stethoscope, HeartPulse, Activity, Baby, FlaskConical, Smile, Droplets, Salad, Moon, Brain, ShieldCheck, Sparkles, Eye, Glasses } from 'lucide-react'
+import { Stethoscope, HeartPulse, Activity, Baby, FlaskConical, Smile, Sparkles, Eye, Glasses } from 'lucide-react'
 
 // TODO: confirm every value with Premier Specialist Clinic before going live.
 // Contact details below are from the clinic's public directory listing (MapXplore) and are pending verification.
@@ -20,8 +20,6 @@ export const P = {
   hero: '1576091160399-112ba8d25d1d', doctor: '1612349317150-e413f6a5b16d', lab: '1579154204601-01588f351e67',
   dental: '1606811841689-23dfddce3e95', surgery: '1551076805-e1869033e561', hospital: '1519494026892-80bbd2d6fd0d',
   maternity: '1555252333-9f8e92e65df9', baby: '1584515933487-779824d29309', outpatient: '1559757148-5c350d0d3c56',
-  water: '1523362628745-0c100150b504', diet: '1512621776951-a57141f2eefd', exercise: '1534438327276-14e5300c3a48',
-  sleep: '1541781774459-bb2af2f05b55', mind: '1506126613408-eca07ce68773', smoke: '1573497019940-1c28c88b4f3e',
   doc1: '1622253692010-333f2da6031d', doc2: '1594824476967-48c8b964273f', doc3: '1537368910025-700350fe46c7',
   doc4: '1582750433449-648ed127bb54', doc5: '1559839734-2b71ea197ec2', doc6: '1651008376811-b90baee60c1f',
 }
@@ -33,7 +31,7 @@ export const SERVICES = [
     slug: 'dermatology-skin-care',
     icon: Sparkles,
     title: 'Dermatology & Advanced Skin Care',
-    photo: '/images/service1.jpg',
+    photo: '/images/dermatology.jpg',
     text: 'Dedicated consultations, advanced therapies and cosmetic treatments for acute and chronic skin conditions.',
     overview: 'Our dermatology service cares for the skin, hair and nails across every age group — from short-lived rashes to long-term conditions and advanced cosmetic treatment, all delivered under specialist supervision.',
     categories: [
@@ -52,7 +50,7 @@ export const SERVICES = [
     slug: 'ophthalmology',
     icon: Eye,
     title: 'Ophthalmology',
-    photo: P.doctor,
+    photo: '/images/ophthalmology.jpg',
     text: 'Expert medical and surgical eye care for complex optical disorders, delivered by specialist consultants.',
     overview: 'Our ophthalmology service provides medical and surgical care for the eyes, from routine assessment of vision problems to the management of complex eye disease, with referral for surgery where it is needed.',
     categories: [
@@ -70,7 +68,7 @@ export const SERVICES = [
     slug: 'optics',
     icon: Glasses,
     title: 'Optics',
-    photo: P.outpatient,
+    photo: '/images/optics.jpg',
     text: 'Vision examinations, corrective lens fittings and standard optical assessments for all ages.',
     overview: 'Our optical service covers vision testing and corrective eyewear, helping you see clearly and comfortably. We assess your sight, fit the right lenses and advise on the eyewear that suits your needs.',
     categories: [
@@ -86,7 +84,7 @@ export const SERVICES = [
     slug: 'specialist-consultations',
     icon: Stethoscope,
     title: 'Specialist Consultations',
-    photo: P.hero,
+    photo: '/images/consultations.jpg',
     text: 'Advanced outpatient clinic care featuring visiting medical consultants and general medical case assessments.',
     overview: 'Our specialist consultation clinics give you access to advanced outpatient care and visiting medical consultants. We assess your case, arrange any needed tests and coordinate onward referral where specialist input is required.',
     categories: [
@@ -99,45 +97,22 @@ export const SERVICES = [
 ]
 
 export const FEATURED = [
-  { icon: Sparkles, title: 'Dermatology & Skin Care', photo: '/images/service1.jpg', text: 'Consultations and advanced therapies for acute and chronic skin, hair and nail conditions.' },
-  { icon: Eye, title: 'Ophthalmology', photo: P.doctor, text: 'Expert medical and surgical eye care for complex optical disorders.' },
-  { icon: Glasses, title: 'Optics', photo: P.outpatient, text: 'Vision examinations, corrective lens fittings and standard optical assessments.' },
+  { icon: Sparkles, title: 'Dermatology & Skin Care', photo: '/images/dermatology.jpg', text: 'Consultations and advanced therapies for acute and chronic skin, hair and nail conditions.' },
+  { icon: Eye, title: 'Ophthalmology', photo: '/images/ophthalmology.jpg', text: 'Expert medical and surgical eye care for complex optical disorders.' },
+  { icon: Glasses, title: 'Optics', photo: '/images/optics.jpg', text: 'Vision examinations, corrective lens fittings and standard optical assessments.' },
 ]
 
-export const NAV = [['/', 'Home'], ['/about', 'About Us'], ['/services', 'Our Services'], ['/doctors', 'Our Specialists'], ['/health-tips', 'Health Tips']]
-
-// General wellness content (demo copy — pending review by the clinic). Shape is CMS-ready.
-export const TIPS = [
-  {
-    slug: 'stay-hydrated', icon: Droplets, tag: 'Everyday health', title: 'Stay hydrated', photo: P.water,
-    text: 'Drink enough clean water through the day, especially in hot weather, to help your body work at its best.',
-    overview: 'Water keeps every part of your body working properly. When you are active or the weather is hot, you lose more fluid than usual — and even mild dehydration can leave you tired, headachy or unable to concentrate.',
-  },
-  {
-    slug: 'eat-a-balanced-diet', icon: Salad, tag: 'Nutrition', title: 'Eat a balanced diet', photo: P.diet,
-    text: 'Build meals around vegetables, fruit, whole grains and lean protein, and limit sugary drinks and processed foods.',
-    overview: 'A balanced diet gives your body the energy and nutrients it needs to stay strong and resist illness. You do not need expensive foods — simple, fresh and varied meals go a long way.',
-  },
-  {
-    slug: 'keep-moving', icon: Activity, tag: 'Fitness', title: 'Keep moving', photo: P.exercise,
-    text: 'A brisk walk most days supports your heart, mood and energy levels.',
-    overview: 'Regular movement is one of the best things you can do for your health. You do not need a gym — walking, chores and everyday activity all count.',
-  },
-  {
-    slug: 'prioritise-sleep', icon: Moon, tag: 'Rest', title: 'Prioritise sleep', photo: P.sleep,
-    text: 'Most adults need 7–9 hours of sleep. A steady routine helps your body recover and stay well.',
-    overview: 'Sleep is when your body repairs itself and your mind processes the day. Poor sleep over time affects mood, concentration and even how well your immune system works.',
-  },
-  {
-    slug: 'look-after-your-mind', icon: Brain, tag: 'Wellbeing', title: 'Look after your mind', photo: P.mind,
-    text: 'Managing stress, staying connected and asking for support matter just as much as physical health.',
-    overview: 'Mental health is part of overall health. Stress, worry and low mood are common, and talking about them — with people you trust or with a professional — makes a real difference.',
-  },
-  {
-    slug: 'do-not-smoke', icon: ShieldCheck, tag: 'Prevention', title: 'Do not smoke', photo: '/images/nosmocking.jpg',
-    text: 'Stopping smoking is one of the biggest steps you can take to protect your health and those around you.',
-    overview: 'Smoking harms almost every part of the body and increases the risk of serious illness, including heart and lung disease. It also affects the people around you through second-hand smoke. Quitting is hard, but support greatly improves your chances.',
-  },
+export const NAV = [
+  ['/', 'Home'],
+  ['/about', 'About Us'],
+  ['/services', 'Our Services'],
+  ['/doctors', 'Our Specialists'],
+  ['/patient-info', 'Patient Information', [
+    ['/patient-info/appointments', 'Appointments & Bookings'],
+    ['/patient-info/preparing', 'Preparing for Your Visit'],
+    ['/patient-info/fees-insurance', 'Fees & Insurance'],
+    ['/patient-info/faq', 'Frequently Asked Questions'],
+  ]],
 ]
 
 // Illustrative placeholder profiles — replace with verified, approved details before launch.

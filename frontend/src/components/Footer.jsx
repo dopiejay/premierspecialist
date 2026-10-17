@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, Mail } from 'lucide-react'
-import { H, tel, NAV } from '../data/site'
+import { Clock, MapPin, Phone, Mail } from 'lucide-react'
+import { H, HOURS, tel, NAV } from '../data/site'
 
 const FOOTER_SERVICES = [
   ['Dermatology & Advanced Skin Care', 'dermatology-skin-care'],
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
         <div>
           <p className="font-bold text-white mb-3">Contact</p>
-          <p className="flex flex-col gap-2 text-white/70"><span><MapPin size={14} className="inline mr-2 text-yellow/80" />{H.address}</span><span><Phone size={14} className="inline mr-2 text-yellow/80" /><a href={tel} className="hover:text-yellow">{H.phone}</a></span><span><Mail size={14} className="inline mr-2 text-yellow/80" /><a href={`mailto:${H.email}`} className="hover:text-yellow">{H.email}</a></span></p>
+          <p className="flex flex-col gap-2 text-white/70"><span><Clock size={14} className="inline mr-2 text-yellow/80" />{HOURS}</span><span><MapPin size={14} className="inline mr-2 text-yellow/80" />{H.address}</span><span><Phone size={14} className="inline mr-2 text-yellow/80" /><a href={tel} className="hover:text-yellow">{H.phone}</a></span><span><Mail size={14} className="inline mr-2 text-yellow/80" /><a href={`mailto:${H.email}`} className="hover:text-yellow">{H.email}</a></span></p>
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-5 py-5 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50">

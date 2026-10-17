@@ -45,7 +45,7 @@ function Login({ onLogin }) {
 }
 
 const LINKS = [['/admin', LayoutDashboard, 'Dashboard', true], ['/admin/appointments', CalendarCheck, 'Appointments']]
-const SOON = [[Stethoscope, 'Services'], [Users, 'Doctors'], [FileText, 'Health tips'], [Globe, 'Website content'], [Settings, 'Users & settings']]
+const SOON = [[Stethoscope, 'Services'], [Users, 'Doctors'], [FileText, 'Patient information'], [Globe, 'Website content'], [Settings, 'Users & settings']]
 
 function Shell({ user, onLogout, children }) {
   const cls = ({ isActive }) => `flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold ${isActive ? 'bg-white text-purple' : 'text-white/80 hover:bg-white/10'}`

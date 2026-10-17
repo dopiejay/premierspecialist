@@ -11,7 +11,7 @@ Run the API: `cd backend && npm run dev` (needs `.env`; see `.env.example`)
 A patient-facing website plus a small staff admin portal for appointment requests.
 
 - Frontend: React + Vite + Tailwind CSS v4, routed pages (Home, About, Services, Doctors,
-  Booking, Health Tips) and a `/admin` portal.
+  Booking, Patient Information) and a `/admin` portal.
 - Backend: Express + PostgreSQL. Public endpoint creates appointment requests; authenticated
   endpoints let staff review, confirm and annotate requests. No medical records.
 
@@ -26,6 +26,10 @@ A patient-facing website plus a small staff admin portal for appointment request
   listed hours (Mon–Fri 08:00–17:00, Sat 08:00–12:00, Sun closed).
 - Directions and the Contact/Booking map now point at Premier Specialist Clinic, Beaton.
 - Backend: session cookie renamed `psc_admin`, appointment reference prefix `SH-` → `PSC-`.
+- Replaced the Health Tips section with **Patient Information** — a nav dropdown
+  (`/patient-info`) with guides for Appointments & Bookings, Preparing for Your Visit,
+  Fees & Insurance and FAQs. Content is demo copy pending clinic confirmation; dental
+  care is mentioned in FAQ copy but has no service page yet.
 
 ## Palette
 
