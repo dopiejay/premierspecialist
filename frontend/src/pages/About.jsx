@@ -38,7 +38,7 @@ export default function About() {
         </Reveal>
       </section>
 
-      <section className="bg-cloud py-24">
+      <section className="bg-mint py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="max-w-3xl">
             <Eyebrow>What Drives Us</Eyebrow>

@@ -21,12 +21,12 @@ export default function PatientAppointments() {
         <SectionHeader eyebrow="Ways to book" title="Two ways to request an appointment" text="You can request an appointment online at any time, or call our reception team during opening hours." />
         <div className="grid md:grid-cols-2 gap-6 mt-12">
           <Reveal className="bg-cloud rounded-2xl p-8">
-            <h3 className="font-display text-2xl font-bold text-purple mb-3">Book online</h3>
+            <h3 className="font-display text-2xl font-bold text-charcoal mb-3">Book online</h3>
             <p className="text-ink/70 leading-relaxed mb-6">Fill in our appointment request form with your details and preferred department. It only takes a few minutes, and you can send a request at any time of day.</p>
             <Button to="/book" variant="primary">Request an appointment <ArrowRight size={18} /></Button>
           </Reveal>
           <Reveal delay={100} className="bg-cloud rounded-2xl p-8">
-            <h3 className="font-display text-2xl font-bold text-purple mb-3">Call reception</h3>
+            <h3 className="font-display text-2xl font-bold text-charcoal mb-3">Call reception</h3>
             <p className="text-ink/70 leading-relaxed mb-6">Prefer to speak to someone? Call our reception team during opening hours and they will help you book, answer your questions and confirm which department is right for you.</p>
             <Button href={tel} variant="outline"><Phone size={18} /> {H.phone}</Button>
           </Reveal>
@@ -35,7 +35,7 @@ export default function PatientAppointments() {
           <p className="text-ink/80 leading-relaxed"><b className="text-charcoal">Please note:</b> walk-in care is not available at Premier Specialist Clinic. Please book ahead so we can prepare for your visit and reduce your waiting time.</p>
         </div>
       </Section>
-      <Section bg="cloud">
+      <Section bg="mint">
         <SectionHeader eyebrow="What happens next" title="After you request an appointment" text="A simple three-step process from request to visit." />
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {STEPS.map(([Icon, t, d], i) => (

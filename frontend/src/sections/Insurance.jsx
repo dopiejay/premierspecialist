@@ -5,7 +5,7 @@ import Button from '../components/Button'
 
 export default function Insurance() {
   return (
-    <section className="bg-cloud py-24">
+    <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-12 items-center">
         <Reveal>
           <Eyebrow>Patients</Eyebrow>

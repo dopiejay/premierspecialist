@@ -28,14 +28,14 @@ export default function PatientInfo() {
           ))}
         </div>
       </Section>
-      <Section bg="cloud">
+      <Section bg="mint">
         <SectionHeader eyebrow="Guides" title="Patient information guides" text="Open any guide for the details — or call our reception team if you cannot find what you need." />
         <div className="grid md:grid-cols-2 gap-6 mt-12">
           {CARDS.map(({ to, icon: Icon, title, text }, i) => (
             <Reveal key={to} delay={(i % 2) * 100}>
               <Link to={to} className="group block bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition h-full">
                 <span className="w-12 h-12 rounded-xl bg-cloud text-cyan grid place-items-center"><Icon size={24} /></span>
-                <h3 className="font-display text-2xl font-bold text-purple mt-5 mb-3">{title}</h3>
+                <h3 className="font-display text-2xl font-bold text-charcoal mt-5 mb-3">{title}</h3>
                 <p className="text-ink/70 leading-relaxed">{text}</p>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan mt-5">Learn more <ArrowRight size={15} className="transition group-hover:translate-x-1" /></span>
               </Link>

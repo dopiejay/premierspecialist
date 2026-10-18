@@ -12,7 +12,7 @@ const POINTS = [
 
 export default function AboutPreview() {
   return (
-    <section className="bg-cloud py-24">
+    <section className="bg-mint py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <Reveal className="relative order-2 lg:order-1">
           <img src="/images/about.jpg" alt="Premier Specialist Clinic" className="w-full h-[380px] lg:h-[480px] rounded-[1.75rem] shadow-xl object-cover" />

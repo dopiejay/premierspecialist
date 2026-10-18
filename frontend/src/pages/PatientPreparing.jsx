@@ -31,7 +31,7 @@ export default function PatientPreparing() {
           ))}
         </div>
       </Section>
-      <Section bg="cloud">
+      <Section bg="mint">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <Eyebrow>On the day</Eyebrow>
@@ -47,11 +47,11 @@ export default function PatientPreparing() {
               </Reveal>
             </div>
           </div>
-          <Reveal delay={150} className="bg-purple rounded-2xl p-8 text-white">
-            <h3 className="font-display text-2xl font-bold mb-4">Department-specific preparation</h3>
-            <p className="text-white/80 leading-relaxed">Some appointments may need simple special preparation — for example, dilating drops for certain eye examinations. If any preparation is needed for your appointment, our team will tell you when your appointment is confirmed.</p>
-            <p className="text-white/80 leading-relaxed mt-4">If you are unsure whether you need to prepare in any way, please call our reception team before your visit and they will check with the relevant department.</p>
-            <Button href={tel} variant="cyan" className="mt-6">Call reception</Button>
+          <Reveal delay={150} className="bg-white rounded-2xl p-8 border border-slate-200">
+            <h3 className="font-display text-2xl font-bold text-charcoal mb-4">Department-specific preparation</h3>
+            <p className="text-ink/70 leading-relaxed">Some appointments may need simple special preparation — for example, dilating drops for certain eye examinations. If any preparation is needed for your appointment, our team will tell you when your appointment is confirmed.</p>
+            <p className="text-ink/70 leading-relaxed mt-4">If you are unsure whether you need to prepare in any way, please call our reception team before your visit and they will check with the relevant department.</p>
+            <Button href={tel} variant="primary" className="mt-6">Call reception</Button>
           </Reveal>
         </div>
       </Section>

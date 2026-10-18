@@ -32,7 +32,7 @@ export default function PatientFees() {
         </div>
         <p className="mt-8 text-sm text-ink/50">Published price lists are available once approved by clinic management. Please contact reception for the most current fee information.</p>
       </Section>
-      <Section bg="cloud">
+      <Section bg="mint">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <Eyebrow>Medical schemes</Eyebrow>
@@ -50,7 +50,7 @@ export default function PatientFees() {
           </div>
           <Reveal delay={120} className="bg-white rounded-2xl p-8 border border-slate-200">
             <span className="w-12 h-12 rounded-xl bg-cloud text-cyan grid place-items-center"><ShieldCheck size={24} /></span>
-            <h3 className="font-display text-2xl font-bold text-purple mt-5 mb-3">A note on cover</h3>
+            <h3 className="font-display text-2xl font-bold text-charcoal mt-5 mb-3">A note on cover</h3>
             <p className="text-ink/70 leading-relaxed">Having medical insurance does not always guarantee full cover for every service. Your scheme may require pre-authorisation, and some services may have limits on what is covered.</p>
             <p className="text-ink/70 leading-relaxed mt-4">Checking with your scheme and our administration team before your visit helps you understand any costs you may be responsible for.</p>
           </Reveal>

@@ -86,7 +86,7 @@ export default function PatientFaq() {
           ))}
         </div>
       </Section>
-      <Section bg="cloud">
+      <Section bg="mint">
         <div className="max-w-3xl">
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal">Still have a question?</h2>
           <p className="mt-5 text-lg leading-relaxed text-ink/65">Our reception team is happy to help with anything not covered here — from booking and fees to preparing for your visit.</p>
