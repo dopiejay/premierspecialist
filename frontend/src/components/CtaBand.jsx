@@ -6,9 +6,9 @@ import { H, tel, P } from '../data/site'
 
 export default function CtaBand({ eyebrow, title, text, photo = P.outpatient, alt = '' }) {
   return (
-    <section className="relative overflow-hidden bg-purple">
+    <section className="relative overflow-hidden bg-charcoal">
       <Photo id={photo} alt={alt} className="absolute inset-0 w-full h-full opacity-25" />
-      <div className="absolute inset-0 bg-gradient-to-r from-purple via-purple/85 to-purple/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/85 to-charcoal/40" />
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-24 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-16">
         <div className="max-w-2xl">
           <Eyebrow light>{eyebrow}</Eyebrow>

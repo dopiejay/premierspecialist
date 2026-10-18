@@ -80,7 +80,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-purple">
+      <section className="bg-charcoal">
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-20 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-16">
           <div className="max-w-2xl">
             <Eyebrow light>Next Steps</Eyebrow>
