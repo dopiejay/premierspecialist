@@ -27,7 +27,7 @@ const FAQS = [
   },
   {
     q: 'Which services does the clinic offer?',
-    a: <>We offer Dermatology &amp; Advanced Skin Care, Ophthalmology, Optics and Specialist Consultations, with dental care also available. You can <Link to="/services" className="text-cyan font-semibold hover:underline">explore our services</Link> to see the full range of care in each department.</>,
+    a: <>We offer Dermatology &amp; Advanced Skin Care, Ophthalmology, Optics, Dental and Specialist Consultations. You can <Link to="/services" className="text-cyan font-semibold hover:underline">explore our services</Link> to see the full range of care in each department.</>,
   },
   {
     q: 'Do I need a referral letter?',
@@ -88,7 +88,7 @@ export default function PatientFaq() {
       </Section>
       <Section bg="cloud">
         <div className="max-w-3xl">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal">Still have a question?</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal">Still have a question?</h2>
           <p className="mt-5 text-lg leading-relaxed text-ink/65">Our reception team is happy to help with anything not covered here — from booking and fees to preparing for your visit.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href={tel} variant="primary"><Phone size={18} /> {H.phone}</Button>

@@ -81,6 +81,22 @@ export const SERVICES = [
     ],
   },
   {
+    slug: 'dental',
+    icon: Smile,
+    title: 'Dental',
+    photo: '/images/dental.jpg',
+    text: 'Routine dental check-ups, treatment and oral health advice for the whole family.',
+    overview: 'Our dental service provides routine check-ups, common treatments and oral health advice. From preventive care to everyday dental problems, we help you and your family maintain a healthy smile at every age.',
+    categories: [
+      { title: 'Dental examinations', items: ['Routine dental check-up', 'Oral health assessment', 'Dental X-rays and diagnosis'] },
+      { title: 'Preventive care', items: ['Teeth cleaning and scaling', 'Fluoride treatment', 'Sealants for children'] },
+      { title: 'Fillings & restorations', items: ['Tooth-coloured fillings', 'Repair of chipped or decayed teeth', 'Root canal treatment'] },
+      { title: 'Tooth removal', items: ['Extraction of damaged teeth', 'Wisdom tooth assessment', 'Post-extraction care'] },
+      { title: 'Children’s dentistry', items: ['Child dental check-ups', 'Early decay prevention', 'Advice on brushing and diet'] },
+      { title: 'Oral health advice', items: ['Brushing and flossing guidance', 'Gum health advice', 'Referral for specialist dental care'] },
+    ],
+  },
+  {
     slug: 'specialist-consultations',
     icon: Stethoscope,
     title: 'Specialist Consultations',

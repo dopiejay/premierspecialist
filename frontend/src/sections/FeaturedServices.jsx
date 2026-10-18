@@ -14,7 +14,7 @@ export default function FeaturedServices() {
       <div className="grid md:grid-cols-3 gap-6">
         {FEATURED.map((s, i) => (
           <Reveal key={s.title} delay={i * 100} className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition">
-            <div className="relative h-52 overflow-hidden"><Photo id={s.photo} icon={s.icon} alt={s.title} className="absolute inset-0 w-full h-full" /></div>
+            <div className="relative h-64 overflow-hidden"><Photo id={s.photo} icon={s.icon} alt={s.title} className="absolute inset-0 w-full h-full" /></div>
             <div className="p-7">
               <h3 className="font-display text-2xl font-bold text-charcoal mb-2">{s.title}</h3>
               <p className="text-sm text-ink/65 leading-relaxed mb-5">{s.text}</p>

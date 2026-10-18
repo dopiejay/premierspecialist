@@ -6,6 +6,7 @@ const FOOTER_SERVICES = [
   ['Dermatology & Advanced Skin Care', 'dermatology-skin-care'],
   ['Ophthalmology', 'ophthalmology'],
   ['Optics', 'optics'],
+  ['Dental', 'dental'],
   ['Specialist Consultations', 'specialist-consultations'],
 ]
 

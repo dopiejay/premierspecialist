@@ -36,7 +36,7 @@ export default function PatientFees() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <Eyebrow>Medical schemes</Eyebrow>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Insurance &amp; medical schemes</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3 mb-5">Insurance &amp; medical schemes</h2>
             <p className="text-ink/70 text-lg leading-relaxed">We work with corporate medical schemes and insurers. Because accepted providers and cover arrangements can vary, please contact our administration team before your visit to confirm that your provider is accepted and whether pre-authorisation is needed for your appointment.</p>
             <div className="space-y-3 mt-7">
               {INSURANCE_POINTS.map((t) => (
@@ -59,7 +59,7 @@ export default function PatientFees() {
       <Section bg="white">
         <div className="max-w-3xl">
           <Eyebrow>Questions</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Still unsure about fees?</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3 mb-5">Still unsure about fees?</h2>
           <p className="text-ink/70 text-lg leading-relaxed">Our reception and administration teams are happy to talk through fees, payment methods and insurance before your appointment. Getting clarity in advance means you can focus on your health on the day.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href={tel} variant="primary">Call reception</Button>

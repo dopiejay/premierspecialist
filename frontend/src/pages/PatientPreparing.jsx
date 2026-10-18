@@ -35,7 +35,7 @@ export default function PatientPreparing() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <Eyebrow>On the day</Eyebrow>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Arriving for your appointment</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3 mb-5">Arriving for your appointment</h2>
             <div className="space-y-5">
               <Reveal className="flex gap-4 bg-white rounded-2xl p-6 border border-slate-200">
                 <span className="w-11 h-11 rounded-xl bg-cloud text-cyan grid place-items-center shrink-0"><Clock size={20} /></span>
@@ -58,7 +58,7 @@ export default function PatientPreparing() {
       <Section bg="white">
         <div className="max-w-3xl">
           <Eyebrow>Next steps</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Not booked yet?</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3 mb-5">Not booked yet?</h2>
           <p className="text-ink/70 text-lg leading-relaxed">Request an appointment online or call our reception team. If you have a question about preparing for your visit, we are happy to help before you come in.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button to="/book" variant="primary">Book an appointment <ArrowRight size={18} /></Button>

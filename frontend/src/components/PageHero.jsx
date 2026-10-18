@@ -14,7 +14,7 @@ export default function PageHero({ kicker, title, text, photo, src, alt = '', ch
       <div className={`relative max-w-7xl mx-auto px-6 md:px-10 pt-36 pb-20 ${hasImage ? 'grid lg:grid-cols-2 gap-12 lg:gap-16 items-center' : ''}`}>
         <div className={hasImage ? '' : 'max-w-3xl'}>
           <Eyebrow light>{kicker}</Eyebrow>
-          <h1 className="font-display text-4xl md:text-6xl font-bold leading-[1.05] mt-4">{title}</h1>
+          <h1 className="font-display text-4xl md:text-6xl font-semibold leading-[1.05] mt-4">{title}</h1>
           <p className="mt-6 text-lg leading-relaxed text-white/75 max-w-xl">{text}</p>
           {(children || showActions) && (
             <div className="mt-8 flex flex-wrap gap-3">

@@ -28,8 +28,8 @@ A patient-facing website plus a small staff admin portal for appointment request
 - Backend: session cookie renamed `psc_admin`, appointment reference prefix `SH-` → `PSC-`.
 - Replaced the Health Tips section with **Patient Information** — a nav dropdown
   (`/patient-info`) with guides for Appointments & Bookings, Preparing for Your Visit,
-  Fees & Insurance and FAQs. Content is demo copy pending clinic confirmation; dental
-  care is mentioned in FAQ copy but has no service page yet.
+Fees & Insurance and FAQs. Content is demo copy pending clinic confirmation; the
+Dental service page is also placeholder copy pending confirmation.
 
 ## Palette
 

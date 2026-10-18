@@ -29,7 +29,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-24 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <Reveal>
           <Eyebrow>Who We Are</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Healthcare with Purpose</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3 mb-5">Healthcare with Purpose</h2>
           <p className="text-ink/70 text-lg leading-relaxed">Premier Specialist Clinic is a specialist outpatient clinic serving the people of Blantyre, Malawi. We bring together clinicians and diagnostic teams to provide accessible, patient-centred care across our medical services.</p>
           <p className="text-ink/70 text-lg leading-relaxed mt-4">From everyday consultations to specialist care, our focus is on treating every patient with dignity, clear communication and professionalism.</p>
         </Reveal>
@@ -42,7 +42,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="max-w-3xl">
             <Eyebrow>What Drives Us</Eyebrow>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3">Mission, vision &amp; core values</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3">Mission, vision &amp; core values</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             {PILLARS.map(({ icon: Icon, title, body }) => (
@@ -67,7 +67,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-24">
         <div className="max-w-3xl">
           <Eyebrow>Our Approach</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3">Our approach to patient care</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3">Our approach to patient care</h2>
           <p className="mt-5 text-lg leading-relaxed text-ink/65">Principles that shape the experience we aim to provide at every visit.</p>
         </div>
         <div className="grid sm:grid-cols-2 gap-6 mt-12">
@@ -84,7 +84,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-20 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-16">
           <div className="max-w-2xl">
             <Eyebrow light>Next Steps</Eyebrow>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mt-3">Your Healthcare Journey Starts Here.</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold text-white mt-3">Your Healthcare Journey Starts Here.</h2>
             <p className="mt-4 text-white/80 text-lg leading-relaxed">Explore the services available at Premier Specialist Clinic or contact the clinic to enquire about your healthcare needs.</p>
           </div>
           <div className="flex flex-wrap gap-3 lg:shrink-0">

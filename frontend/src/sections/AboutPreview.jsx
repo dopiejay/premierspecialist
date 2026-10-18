@@ -19,7 +19,7 @@ export default function AboutPreview() {
         </Reveal>
         <Reveal delay={120} className="order-1 lg:order-2">
           <Eyebrow>About Premier Specialist Clinic</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Specialist care in the heart of Blantyre</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3 mb-5">Specialist care in the heart of Blantyre</h2>
           <p className="text-ink/70 text-lg leading-relaxed">Professional, patient-centred care in a respectful environment. We support individuals and families through accessible specialist consultations, diagnostics and clear communication.</p>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 mt-9">
             {POINTS.map(([Icon, t, d]) => (

@@ -12,7 +12,7 @@ export default function CtaBand({ eyebrow, title, text, photo = P.outpatient, al
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-24 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-16">
         <div className="max-w-2xl">
           <Eyebrow light>{eyebrow}</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mt-3">{title}</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-white mt-3">{title}</h2>
           <p className="mt-4 text-white/70 text-lg">{text}</p>
         </div>
         <div className="flex flex-wrap gap-3 lg:shrink-0">

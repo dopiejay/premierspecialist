@@ -51,7 +51,7 @@ export default function PatientAppointments() {
       <Section bg="white">
         <div className="max-w-3xl">
           <Eyebrow>Changes</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Rescheduling or cancelling</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-charcoal mt-3 mb-5">Rescheduling or cancelling</h2>
           <p className="text-ink/70 text-lg leading-relaxed">If you need to change or cancel your appointment, please contact our reception team as soon as you can, using the phone number you booked with. Calling ahead helps us offer the time to another patient and avoids unnecessary delays on the day.</p>
           <p className="text-ink/70 text-lg leading-relaxed mt-4">When you call, it helps to have your appointment reference number ready — you will receive it when your appointment is confirmed.</p>
           <div className="mt-8 flex flex-wrap gap-3">

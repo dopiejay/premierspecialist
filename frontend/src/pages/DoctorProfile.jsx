@@ -17,7 +17,7 @@ export default function DoctorProfile() {
         </div>
         <div className="md:col-span-7">
           <p className="text-sm font-semibold uppercase tracking-wide text-cyan">{doctor.specialty}</p>
-          <h1 className="mt-2 font-display text-4xl md:text-5xl font-bold text-charcoal">{doctor.name}</h1>
+          <h1 className="mt-2 font-display text-4xl md:text-5xl font-semibold text-charcoal">{doctor.name}</h1>
           <p className="mt-2 text-sm text-ink/50">{doctor.qualifications}</p>
           <p className="mt-6 text-lg leading-relaxed text-ink/70">{doctor.bio}</p>
           <div className="mt-8"><Button to="/book">Book an appointment <ArrowRight size={18} /></Button></div>
