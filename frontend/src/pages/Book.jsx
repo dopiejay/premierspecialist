@@ -36,7 +36,7 @@ export default function Book() {
   return (
     <>
       <PageHero kicker="Appointments" title="Request an appointment" text="Send us your details and our reception team will contact you to confirm a time." showActions={false} />
-      <section className="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-5 gap-10">
+      <section className="max-w-7xl mx-auto px-6 md:px-10 py-20 grid lg:grid-cols-5 gap-10">
         <form className="lg:col-span-3 bg-white rounded-2xl border border-slate-200 p-8 md:p-10 space-y-4" onSubmit={submit}>
           {sent ? (
             <div className="py-10 text-center"><span className="w-16 h-16 rounded-full bg-green/10 text-green grid place-items-center mx-auto mb-4"><CalendarCheck size={30} /></span><h3 className="font-display text-3xl font-bold text-charcoal">Request received</h3><p className="text-ink/65 mt-2">Your reference is <b className="text-charcoal">{reference}</b>. Our reception team will contact you to confirm a time.</p></div>

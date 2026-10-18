@@ -11,7 +11,7 @@ export default function ServiceDetail() {
   if (!service) return <Navigate to="/services" replace />
   return (
     <>
-      <section className="max-w-3xl mx-auto px-5 pt-32 pb-4">
+      <section className="max-w-3xl mx-auto px-6 md:px-10 pt-32 pb-4">
         <Link to="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-charcoal/60 hover:text-charcoal transition"><ArrowRight size={16} className="rotate-180" /> All services</Link>
         <Photo id={service.photo} icon={service.icon} alt={service.title} w={1200} className="mt-8 w-full h-72 md:h-96 rounded-2xl block" />
         <h1 className="mt-8 font-display text-4xl md:text-5xl font-bold text-charcoal">{service.title}</h1>

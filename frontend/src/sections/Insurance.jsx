@@ -6,7 +6,7 @@ import Button from '../components/Button'
 export default function Insurance() {
   return (
     <section className="bg-cloud py-24">
-      <div className="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-12 items-center">
         <Reveal>
           <Eyebrow>Patients</Eyebrow>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Insurance &amp; medical schemes</h2>

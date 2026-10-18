@@ -5,7 +5,7 @@ import { tel } from '../data/site'
 export default function PromoBand({ eyebrow, title, text }) {
   return (
     <section className="bg-cyan">
-      <div className="max-w-7xl mx-auto px-5 py-20 flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-20 flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
         <div className="lg:flex-1">
           <p className="text-xs font-extrabold tracking-[.2em] uppercase text-white/80">{eyebrow}</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mt-3">{title}</h2>

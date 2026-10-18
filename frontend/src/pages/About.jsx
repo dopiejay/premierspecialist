@@ -26,7 +26,7 @@ export default function About() {
         <Button to="/book" variant="ghostLight">Contact Us</Button>
       </PageHero>
 
-      <section className="max-w-7xl mx-auto px-5 py-24 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section className="max-w-7xl mx-auto px-6 md:px-10 py-24 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <Reveal>
           <Eyebrow>Who We Are</Eyebrow>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-5">Healthcare with Purpose</h2>
@@ -39,7 +39,7 @@ export default function About() {
       </section>
 
       <section className="bg-cloud py-24">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="max-w-3xl">
             <Eyebrow>What Drives Us</Eyebrow>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3">Mission, vision &amp; core values</h2>
@@ -64,7 +64,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-5 py-24">
+      <section className="max-w-7xl mx-auto px-6 md:px-10 py-24">
         <div className="max-w-3xl">
           <Eyebrow>Our Approach</Eyebrow>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3">Our approach to patient care</h2>
@@ -81,7 +81,7 @@ export default function About() {
       </section>
 
       <section className="bg-purple">
-        <div className="max-w-7xl mx-auto px-5 py-20 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 py-20 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-16">
           <div className="max-w-2xl">
             <Eyebrow light>Next Steps</Eyebrow>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white mt-3">Your Healthcare Journey Starts Here.</h2>

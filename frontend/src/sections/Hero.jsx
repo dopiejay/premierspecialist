@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-[100svh] flex items-center overflow-hidden bg-charcoal">
       <img src="/images/hero.jpg" alt="Premier Specialist Clinic care team with a patient" className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/55 to-charcoal/15" />
-      <div className="relative w-full max-w-7xl mx-auto px-5 pt-28 pb-20 md:pt-36 md:pb-24">
+      <div className="relative w-full max-w-7xl mx-auto px-6 md:px-10 pt-28 pb-20 md:pt-36 md:pb-24">
         <p className="text-xs font-semibold uppercase tracking-[.25em] text-white/70">
           Specialist clinic · Blantyre
         </p>
