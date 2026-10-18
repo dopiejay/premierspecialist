@@ -38,7 +38,7 @@ export default function Header() {
       </div>
       <div className="bg-white/95 backdrop-blur border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-[72px] flex items-center justify-between">
-          <Link to="/" className="font-display text-2xl font-bold tracking-tight text-purple">Premier Specialist Clinic</Link>
+          <Link to="/" className="font-display text-2xl font-bold tracking-tight text-purple"><span className="sm:hidden">PSC</span><span className="hidden sm:inline">Premier Specialist Clinic</span></Link>
           <nav className="hidden lg:flex items-center gap-1">
             {NAV.map(([to, label, children]) => children ? (
               <div key={to} ref={ddRef} className="relative">
